@@ -27,8 +27,8 @@ export default function GamePage() {
     makeChoice, nextTurn, loadState,
     phase, turn, industryId, resources, roles, currentEvent,
     pendingSocialEvent, unlockedSkills, skillPoints,
-    lastDelta, eventHistory, endingTriggered, flags,
-    loan, loanInterest, missedPayments,
+    lastDelta, eventHistory, endingTriggered,
+    loan, missedPayments,
   } = state;
 
   const { activeTab, setActiveTab } = useUIStore();

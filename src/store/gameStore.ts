@@ -8,7 +8,6 @@ import {
   startNewGame,
   advanceTurn,
   resolveChoice,
-  getEndingDef,
 } from '../engine/GameEngine';
 
 interface GameStore extends GameState {
