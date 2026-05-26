@@ -1,0 +1,5 @@
+<!--
+  一人公司 - 主页面
+  使用 web-view 加载游戏
+-->
+<web-view src="{{gameUrl}}" bindload="onWebLoad" binderror="onWebError" />

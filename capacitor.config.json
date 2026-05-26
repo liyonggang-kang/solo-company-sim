@@ -1,0 +1,8 @@
+{
+  "appId": "com.solocompany.sim",
+  "appName": "一人公司",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "一人公司",
+    "navigationBarBackgroundColor": "#f2f2f7",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f2f2f7"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,286 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #f2f2f7;
+  --color-dark-card: #ffffff;
+  --color-dark-card-hover: #f0f0f5;
+  --color-dark-border: #e5e5ea;
+  --color-accent: #007aff;
+  --color-accent-dim: #99c9ff;
+  --color-danger: #ff3b30;
+  --color-success: #34c759;
+  --color-info: #007aff;
+  --color-text-primary: #1c1c1e;
+  --color-text-secondary: #6e6e73;
+  --color-text-muted: #aeaeb2;
+  --color-resource-money: #ff9500;
+  --color-resource-energy: #007aff;
+  --color-resource-reputation: #af52de;
+  --color-resource-health: #34c759;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  font-size: 15px;
+  background: var(--color-dark-bg);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global text size adjustments */
+.text-xs { font-size: 0.8rem !important; }
+.text-sm { font-size: 0.95rem !important; }
+.text-lg { font-size: 1.2rem !important; }
+.text-xl { font-size: 1.4rem !important; }
+.text-2xl { font-size: 1.8rem !important; }
+.text-3xl { font-size: 2.2rem !important; }
+
+#root {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-border);
+  border-radius: 2px;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Typewriter cursor */
+.typewriter-cursor {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Resource bar animation */
+.resource-fill {
+  transition: width 0.5s ease;
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card-hover:active {
+  transform: scale(0.98);
+}
+
+/* ============================================
+   事件动画场景 (EventAnimation)
+   ============================================ */
+
+/* 通用浮动动画 */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* 粒子动画 */
+.animate-particle {
+  animation: particle-drift linear infinite;
+}
+@keyframes particle-drift {
+  0% { transform: translateY(0) scale(0.5); opacity: 0; }
+  20% { opacity: 0.5; }
+  80% { opacity: 0.3; }
+  100% { transform: translateY(-60px) scale(1.2); opacity: 0; }
+}
+
+/* 脉冲边框（社会事件） */
+.animate-pulse-border {
+  animation: pulse-border 2s ease-in-out infinite;
+}
+@keyframes pulse-border {
+  0%, 100% { border-color: rgba(224, 85, 85, 0.3); }
+  50% { border-color: rgba(224, 85, 85, 0.8); }
+}
+
+/* --- 各场景专用动画 --- */
+
+/* 身心俱疲 - 缓慢摇晃 + 下沉 */
+.animate-exhausted {
+  animation: exhausted 2s ease-in-out infinite;
+}
+@keyframes exhausted {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(5px) rotate(-3deg); }
+  75% { transform: translateY(-2px) rotate(3deg); }
+}
+
+/* 爆款/火了 - 快速弹跳 + 放大 */
+.animate-viral {
+  animation: viral 0.6s ease-in-out infinite;
+}
+@keyframes viral {
+  0%, 100% { transform: scale(1) translateY(0); }
+  30% { transform: scale(1.3) translateY(-15px); }
+  60% { transform: scale(1.1) translateY(-5px); }
+}
+
+/* AI/机器人 - 机械抖动 */
+.animate-robot {
+  animation: robot 1.5s steps(3) infinite;
+}
+@keyframes robot {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-3px) rotate(2deg); }
+  66% { transform: translateY(3px) rotate(-2deg); }
+}
+
+/* 愤怒/冲突 - 剧烈抖动 */
+.animate-angry {
+  animation: angry 0.3s ease-in-out infinite;
+}
+@keyframes angry {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* 金钱/投资 - 弹性上升 */
+.animate-money {
+  animation: money 1.5s ease-in-out infinite;
+}
+@keyframes money {
+  0%, 100% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-12px) scale(1.1); }
+  70% { transform: translateY(-4px) scale(1.05); }
+}
+
+/* 合作/签约 - 握手式摆动 */
+.animate-deal {
+  animation: deal 2s ease-in-out infinite;
+}
+@keyframes deal {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.05) rotate(-2deg); }
+  75% { transform: scale(1.05) rotate(2deg); }
+}
+
+/* 电话/家人 - 温柔脉动 */
+.animate-call {
+  animation: call 2s ease-in-out infinite;
+}
+@keyframes call {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.8; }
+}
+
+/* 深夜/失眠 - 缓慢旋转 */
+.animate-night {
+  animation: night 4s linear infinite;
+}
+@keyframes night {
+  0% { transform: rotate(0deg) translateY(0); }
+  25% { transform: rotate(5deg) translateY(-4px); }
+  75% { transform: rotate(-5deg) translateY(4px); }
+  100% { transform: rotate(0deg) translateY(0); }
+}
+
+/* 监管/合规 - 垂直下落 + 回弹 */
+.animate-regulation {
+  animation: regulation 1.5s ease-in-out infinite;
+}
+@keyframes regulation {
+  0% { transform: translateY(-20px); opacity: 0.3; }
+  50% { transform: translateY(5px); opacity: 1; }
+  70% { transform: translateY(-3px); }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* 宠物 - 活泼弹跳 */
+.animate-pet {
+  animation: pet 0.8s ease-in-out infinite;
+}
+@keyframes pet {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  20% { transform: translateY(-18px) rotate(-5deg); }
+  40% { transform: translateY(0) rotate(0deg); }
+  60% { transform: translateY(-8px) rotate(5deg); }
+}
+
+/* 危机 - 下坠 + 微闪 */
+.animate-crisis {
+  animation: crisis-emoji 1.5s ease-in-out infinite;
+}
+@keyframes crisis-emoji {
+  0%, 100% { transform: translateY(0) scale(1); }
+  30% { transform: translateY(8px) scale(1.08); }
+  60% { transform: translateY(-3px) scale(0.95); }
+}
+
+/* 机遇 - 上升发光 */
+.animate-opportunity {
+  animation: opportunity 1.5s ease-in-out infinite;
+}
+@keyframes opportunity {
+  0%, 100% { transform: translateY(0) scale(1); filter: brightness(1); }
+  50% { transform: translateY(-12px) scale(1.1); filter: brightness(1.4); }
+}
+
+/* 剧情 - 缓慢浮动 */
+.animate-narrative {
+  animation: narrative 3s ease-in-out infinite;
+}
+@keyframes narrative {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* 日常 - 微小呼吸 */
+.animate-neutral {
+  animation: neutral 3s ease-in-out infinite;
+}
+@keyframes neutral {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+/* 滑入动画（弹窗用） */
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.35s ease-out;
+}
