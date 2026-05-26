@@ -1,6 +1,0 @@
-node_modules
-dist
-android
-.vercel
-*.apk
-.DS_Store
