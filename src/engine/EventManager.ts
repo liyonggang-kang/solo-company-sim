@@ -18,13 +18,6 @@ function weightedRandom<T>(items: T[], weights: number[]): T {
   return items[items.length - 1];
 }
 
-function getRecentEventIds(state: GameState): string[] {
-  return state.eventHistory.slice(-RECENT_COOLDOWN).map(e => {
-    // Extract event ID from history by matching event titles back to IDs
-    return '';
-  }).filter(Boolean);
-}
-
 // Track which event IDs were recently seen (by looking at completed events order)
 function getRecentlyShown(state: GameState, count: number): string[] {
   // Use completedEvents (which maintains insertion order) to get recent ones

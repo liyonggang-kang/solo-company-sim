@@ -11,7 +11,7 @@ interface EventCardProps {
   onChoice: (choice: EventChoice) => void;
 }
 
-function canAfford(choice: EventChoice, resources: any, roles: any): boolean {
+function canAfford(choice: EventChoice, resources: any, roles: any, skills: string[]): boolean {
   const req = choice.requirements;
   if (!req) return true;
   if (req.minMoney !== undefined && resources.money < req.minMoney) return false;
@@ -23,7 +23,7 @@ function canAfford(choice: EventChoice, resources: any, roles: any): boolean {
     if (req.minRole.role === 'employee' && roles.employee < req.minRole.value) return false;
     if (req.minRole.role === 'sales' && roles.sales < req.minRole.value) return false;
   }
-  if (req.requiredSkill && !(unlockedSkills as string[]).includes(req.requiredSkill)) return false;
+  if (req.requiredSkill && !skills.includes(req.requiredSkill)) return false;
   return true;
 }
 
@@ -87,7 +87,7 @@ export default function EventCard({ event, resources, roles, unlockedSkills, onC
           <ChoiceButton
             key={choice.id}
             choice={choice}
-            disabled={!canAfford(choice, resources, roles)}
+            disabled={!canAfford(choice, resources, roles, unlockedSkills)}
             onClick={onChoice}
           />
         ))}

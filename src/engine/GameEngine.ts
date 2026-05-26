@@ -2,8 +2,8 @@
 // 游戏引擎 — 核心状态机，纯函数
 // ============================================================
 import type {
-  GameState, GamePhase, IndustryId, EventChoice,
-  GameEvent, EndingId, EventLogEntry,
+  GameState, IndustryId, EventChoice,
+  EndingId, EventLogEntry,
 } from './types';
 import { INDUSTRIES } from './data/industries';
 import { EVENTS } from './data/events';

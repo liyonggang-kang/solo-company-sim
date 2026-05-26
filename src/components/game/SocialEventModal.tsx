@@ -14,7 +14,7 @@ interface SocialEventModalProps {
 }
 
 export default function SocialEventModal({
-  open, event, resources, roles, unlockedSkills, onChoice,
+  open, event, /* resources, roles, unlockedSkills - unused params kept for future use */ onChoice,
 }: SocialEventModalProps) {
   const [visibleChars, setVisibleChars] = useState(0);
 

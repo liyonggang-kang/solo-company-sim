@@ -1,9 +1,8 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useGameStore } from '../store/gameStore';
 import { getEndingDef } from '../engine/GameEngine';
 import type { EndingId } from '../engine/types';
-import { INDUSTRIES } from '../engine/data/industries';
 
 export default function EndingPage() {
   const navigate = useNavigate();
@@ -22,8 +21,6 @@ export default function EndingPage() {
       </div>
     );
   }
-
-  const industryName = state.industryId ? INDUSTRIES[state.industryId]?.name : '未知';
 
   return (
     <div className="flex flex-col min-h-screen p-4 space-y-6">

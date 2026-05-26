@@ -5,7 +5,6 @@ import { useUIStore } from '../store/uiStore';
 import { useSaveStore } from '../store/saveStore';
 import type { EventChoice } from '../engine/types';
 import { INDUSTRIES } from '../engine/data/industries';
-import { getEndingDef } from '../engine/GameEngine';
 import {
   sfxChoiceMade, sfxPositive, sfxNegative, sfxSocialEvent,
   sfxEnding, sfxSadEnding, sfxEventNew, sfxOpenTab, sfxClick,
@@ -25,7 +24,7 @@ export default function GamePage() {
   const [searchParams] = useSearchParams();
   const state = useGameStore();
   const {
-    initNewGame, makeChoice, nextTurn, loadState,
+    makeChoice, nextTurn, loadState,
     phase, turn, industryId, resources, roles, currentEvent,
     pendingSocialEvent, unlockedSkills, skillPoints,
     lastDelta, eventHistory, endingTriggered, flags,

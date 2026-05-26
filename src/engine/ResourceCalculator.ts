@@ -86,7 +86,7 @@ export function applyEffects(
         if (effect.operation === 'toggle') {
           newFlags[effect.target] = !(effect.target as any);
         } else {
-          newFlags[effect.target] = effect.value;
+          newFlags[effect.target] = effect.value as number | boolean;
         }
         break;
 
