@@ -154,8 +154,16 @@ export function resolveChoice(
 export function advanceTurn(state: GameState): GameState {
   const newTurn = state.turn + 1;
 
-  // 每 5 回合获得 1 个技能点
-  const skillPointBonus = newTurn % 5 === 0 ? 1 : 0;
+  // 每 4 回合获得 1 个技能点
+  const skillPointBonus = newTurn % 4 === 0 ? 1 : 0;
+
+  // 里程碑奖励（首次突破阈值时+2点）
+  let milestoneBonus = 0;
+  const m = state.resources;
+  if (m.money >= 50 && !state.flags['milestone_money_50']) milestoneBonus += 2;
+  if (m.money >= 80 && !state.flags['milestone_money_80']) milestoneBonus += 2;
+  if (m.reputation >= 50 && !state.flags['milestone_rep_50']) milestoneBonus += 2;
+  if (m.reputation >= 80 && !state.flags['milestone_rep_80']) milestoneBonus += 2;
 
   // 贷款利息：有贷款时每回合增加利息
   let newLoan = state.loan;
@@ -171,10 +179,18 @@ export function advanceTurn(state: GameState): GameState {
     }
   }
 
+  // 设置里程碑 flag
+  const newFlags = { ...state.flags };
+  if (state.resources.money >= 50) newFlags['milestone_money_50'] = true;
+  if (state.resources.money >= 80) newFlags['milestone_money_80'] = true;
+  if (state.resources.reputation >= 50) newFlags['milestone_rep_50'] = true;
+  if (state.resources.reputation >= 80) newFlags['milestone_rep_80'] = true;
+
   let updated: GameState = {
     ...state,
     turn: newTurn,
-    skillPoints: state.skillPoints + skillPointBonus,
+    flags: newFlags,
+    skillPoints: state.skillPoints + skillPointBonus + milestoneBonus,
     loan: newLoan,
     loanInterest: newInterest,
     missedPayments: newMissedPayments,

@@ -88,6 +88,7 @@ export default function EventCard({ event, resources, roles, unlockedSkills, onC
             key={choice.id}
             choice={choice}
             disabled={!canAfford(choice, resources, roles, unlockedSkills)}
+            unlockedSkills={unlockedSkills}
             onClick={onChoice}
           />
         ))}

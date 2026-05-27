@@ -52,32 +52,58 @@ export function evaluateEnding(state: GameState): EndingId | null {
   // ---- 正面结局 ----
   const avgResource = (resources.money + resources.energy + resources.reputation + resources.health) / 4;
 
-  // 传奇
-  if (skillCount >= 12 && avgResource >= 75) {
+  // 传奇 — 需要各分支都有涉猎
+  const branchCounts = { business: 0, tech: 0, network: 0, spirit: 0, generalist: 0 };
+  const branchSet = ['business', 'tech', 'network', 'spirit', 'generalist'];
+  // Count skills per branch
+  ['cost_control','pricing_strategy','negotiation_master','business_intuition'].forEach(s => { if (unlockedSkills.includes(s as any)) branchCounts.business++; });
+  ['rapid_prototype','automation_tool','seo_optimization','tech_barrier'].forEach(s => { if (unlockedSkills.includes(s as any)) branchCounts.tech++; });
+  ['social_skill','mentor_help','crisis_pr','industry_network'].forEach(s => { if (unlockedSkills.includes(s as any)) branchCounts.network++; });
+  ['meditation','resilience','creativity','flow_state'].forEach(s => { if (unlockedSkills.includes(s as any)) branchCounts.spirit++; });
+  ['cross_domain','fast_learning','generalist_bonus','master_key'].forEach(s => { if (unlockedSkills.includes(s as any)) branchCounts.generalist++; });
+  const everyBranch = Object.values(branchCounts).every(c => c >= 2);
+
+  if (everyBranch && avgResource >= 70) {
     return 'legend';
   }
 
-  // 财富自由
+  // 财富自由 — 需要商业技能做支撑
+  if (resources.money >= 90 && branchCounts.business >= 3) {
+    return 'wealth_freedom';
+  }
+  // 没有足够商业技能也能财富自由，但门槛更高
   if (resources.money >= 95) {
     return 'wealth_freedom';
   }
 
-  // 行业专家
-  if (resources.reputation >= 90 && skillCount >= 8) {
+  // 行业专家 — 需要关系网络
+  if (resources.reputation >= 85 && branchCounts.network >= 3) {
+    return 'industry_expert';
+  }
+  if (resources.reputation >= 92 && skillCount >= 8) {
     return 'industry_expert';
   }
 
-  // 被收购
+  // 被收购 — 需要商业+关系
+  if (flags['met_investor'] && resources.reputation >= 55 && resources.money >= 45 && branchCounts.business >= 2 && branchCounts.network >= 2) {
+    return 'acquired';
+  }
   if (flags['met_investor'] && resources.reputation >= 60 && resources.money >= 50) {
     return 'acquired';
   }
 
-  // 连续创业者
+  // 连续创业者 — 需要精神力量支撑
+  if (flags['failed_before'] && resources.money >= 30 && resources.health >= 50 && branchCounts.spirit >= 2) {
+    return 'serial_entrepreneur';
+  }
   if (flags['failed_before'] && resources.money >= 30 && resources.health >= 50) {
     return 'serial_entrepreneur';
   }
 
-  // 转行艺术家
+  // 转行艺术家 — 需要4个精神技能
+  if (spiritSkills >= 4 && resources.reputation >= 45 && resources.money <= 45) {
+    return 'artist';
+  }
   if (spiritSkills >= 3 && resources.reputation >= 50 && resources.money <= 40) {
     return 'artist';
   }
