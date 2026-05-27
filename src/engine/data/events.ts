@@ -39,6 +39,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -10, operation: 'add' },
         { type: 'resource', target: 'energy', value: -15, operation: 'add' },
       ], outcomeText: '你开了三个平台的账号，虽然累但风险确实分散了。' },
+      { id: 'c', text: '跟同行交流取经，看看别人怎么应对', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你加入了几个创作者群，大家互通有无。原来不只你一个人受影响——抱团取暖感觉好多了。' },
     ], repeatable: false,
   },
   {
@@ -54,6 +58,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: -15, operation: 'add' },
         { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '虽然热度确实过去了，但"不回应"被当成默认，伤害已经造成。' },
+      { id: 'c', text: '发动铁粉帮你辟谣和解释', effects: [
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你的老粉丝自发帮你澄清，有人翻出原视频逐帧对比。铁粉的力量比想象中大。' },
     ], repeatable: false,
   },
   {
@@ -69,6 +77,11 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '品牌方惊讶但尊重。你的粉丝知道了这事，反而更信任你了。' },
+      { id: 'c', text: '跟品牌方谈试用期，效果好再续约', effects: [
+        { type: 'resource', target: 'money', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你提出了试用方案。品牌方同意先试一期看看效果。折中方案——既赚了钱又没透支信誉。' },
     ], repeatable: false,
   },
   {
@@ -85,6 +98,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
         { type: 'resource', target: 'energy', value: -10, operation: 'add' },
       ], outcomeText: '你坚持独立创作。虽然更累，但每条视频都是你想做的内容。' },
+      { id: 'c', text: '谈一个短期合作试试水', effects: [
+        { type: 'resource', target: 'money', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你签了一个三个月的短期协议。先试试合不合得来——万一不合适随时可以撤。' },
     ], repeatable: false,
   },
   {
@@ -101,6 +118,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
         { type: 'resource', target: 'money', value: -5, operation: 'add' },
       ], outcomeText: '简单吃了顿饭，真实又温暖。有人发朋友圈说"关注你是今年最正确的决定"。' },
+      { id: 'c', text: '线上同步直播，让不能到场的粉丝也可以参与', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+      ], outcomeText: '你在线上也开了直播，外地粉丝感动坏了。有人说"虽然不能来，但感觉就在现场"。' },
     ], repeatable: false,
   },
 
@@ -118,6 +139,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -15, operation: 'add' },
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你终止了合作，虽然少了一个客户，但睡得踏实了。' },
+      { id: 'c', text: '赔一部分钱但要求店主加强管理', effects: [
+        { type: 'resource', target: 'money', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你出钱安抚了顾客，同时让店主承诺加强管理。花钱买教训——但下次不会了。' },
     ], repeatable: false,
   },
   {
@@ -132,6 +157,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '保持灵活，多家合作', effects: [
         { type: 'resource', target: 'energy', value: -10, operation: 'add' },
       ], outcomeText: '你选择了分散风险的路线，虽然累但更安全。' },
+      { id: 'c', text: '先接一部分试运营，做好了再加量', effects: [
+        { type: 'resource', target: 'money', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你只接了部分门店先做起来。稳扎稳打永远比贪多嚼不烂好。' },
     ], repeatable: false,
   },
   {
@@ -148,6 +178,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -15, operation: 'add' },
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '停业三天，损失了一些收入但保留了体力。骑手罢工结束后一切恢复。' },
+      { id: 'c', text: '跟客户挨个解释情况，争取理解', effects: [
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你给每个等餐的客户发了消息解释情况。大部分人表示理解。"态度诚恳就不会差到哪去"。' },
     ], repeatable: false,
   },
   {
@@ -163,6 +197,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 20, operation: 'add' },
         { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '利润保住了，但也有一些价格敏感的顾客流失了。' },
+      { id: 'c', text: '趁补贴期把口碑做起来', effects: [
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+      ], outcomeText: '你没有只顾接单，而是花精力在每个订单的服务上。补贴会结束，但口碑不会。' },
     ], repeatable: false,
   },
   {
@@ -178,6 +216,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '你推出了独家套餐和服务，靠品质差异化了。客户说"贵的值"。' },
+      { id: 'c', text: '跟店主商量研发独家的招牌菜', effects: [
+        { type: 'resource', target: 'energy', value: -18, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+      ], outcomeText: '你们研发出了一款只有这家店才有的招牌菜。抄得了菜单抄不了味道——这才是真正的护城河。' },
     ], repeatable: false,
   },
   {
@@ -193,6 +235,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'health', value: -10, operation: 'add' },
         { type: 'flag', target: 'regulatory_risk', value: true, operation: 'set' },
       ], outcomeText: '你选择了观望，但每次看到"专项整治"的新闻都会紧张一下。' },
+      { id: 'c', text: '咨询同行看看他们怎么应对的', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 3, operation: 'add' },
+      ], outcomeText: '你问了几个同行的处理方式。有时候最快的学习就是跟着有经验的人走。' },
     ], repeatable: false,
   },
 
@@ -209,6 +255,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '保持节奏，用内容说话', effects: [
         { type: 'resource', target: 'reputation', value: 20, operation: 'add' },
       ], outcomeText: '你保持了一贯的水准，粉丝说"只有你的文章我每篇都看"。' },
+      { id: 'c', text: '把广告收入的一部分捐出去', effects: [
+        { type: 'resource', target: 'reputation', value: 18, operation: 'add' },
+        { type: 'resource', target: 'money', value: -3, operation: 'add' },
+      ], outcomeText: '你捐了一小部分出去并在文章里说明了。读者说"这才是格局"——反而更多人关注了。' },
     ], repeatable: false,
   },
   {
@@ -224,6 +274,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
         { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '你选择把精力放在创作上。虽然不公平，但你的时间更值钱。' },
+      { id: 'c', text: '写一篇"如何应对洗稿"的文章', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+      ], outcomeText: '你写了一篇关于原创保护的文章。意外地成了爆款——比被洗的那篇阅读量还高。' },
     ], repeatable: false,
   },
   {
@@ -240,6 +294,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 15, operation: 'add' },
         { type: 'flag', target: 'started_subscription', value: true, operation: 'set' },
       ], outcomeText: '你开启了付费订阅模式。人数不多，但收入比广告分成稳定。' },
+      { id: 'c', text: '趁这个机会拓展自己的网站和邮件列表', effects: [
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你建了自己的网站和邮件订阅。读者到了你自己的地盘——以后平台怎么变都不怕了。' },
     ], repeatable: false,
   },
   {
@@ -255,6 +313,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒，时机未到', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你觉得自己的积累还不够，决定再沉淀一段时间。' },
+      { id: 'c', text: '问出版社能不能加些配图做成精品书', effects: [
+        { type: 'resource', target: 'reputation', value: 18, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -20, operation: 'add' },
+      ], outcomeText: '你提议做成配图版的精品书。出版社同意了——品质感让这本书脱颖而出。' },
     ], repeatable: false,
   },
   {
@@ -270,6 +332,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你用更委婉的方式表达了同样的意思。读者看懂了你藏在文字里的东西。' },
+      { id: 'c', text: '把文章发在个人网站上避开平台审查', effects: [
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你把文章发在了自己的网站上。虽然流量少了但至少不会被删——有些话值得被看到。' },
     ], repeatable: false,
   },
   {
@@ -285,6 +351,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '截图发朋友圈（不暴露隐私）', effects: [
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
       ], outcomeText: '你分享了这个故事（隐去了关键信息），朋友圈炸了，很多人说"我也是"。' },
+      { id: 'c', text: '在下一篇文章开头提到这封信', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '你在新文章里轻描淡写地提了一句。那位读者在评论区出现了——他说"没想到你还记得"。' },
     ], repeatable: false,
   },
 
@@ -302,6 +372,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你做了排队机制。有人抱怨，但产品体验保证了。' },
+      { id: 'c', text: '联系平台要求补充服务器资源', effects: [
+        { type: 'resource', target: 'money', value: -10, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+      ], outcomeText: '你花钱升了服务器配置。用户看到加载速度变快——有时候技术投入是最好的市场投入。' },
     ], repeatable: false,
   },
   {
@@ -318,6 +392,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 20, operation: 'add' },
         { type: 'flag', target: 'went_opensource', value: true, operation: 'set' },
       ], outcomeText: '开源后社区活跃度远超预期。有人打赏，有人贡献代码，比单打独斗强。' },
+      { id: 'c', text: '开源一些非核心模块建立社区信任', effects: [
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+      ], outcomeText: '你开源了几个辅助模块。社区反应热烈——"大厂抄不了开源社区的热情"。' },
     ], repeatable: false,
   },
   {
@@ -333,6 +411,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒，坚持产品路线', effects: [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '你说"不"的那一刻，感觉自己像个真正的企业家。' },
+      { id: 'c', text: '谈一个折中方案：核心功能不改，只做定制插件', effects: [
+        { type: 'resource', target: 'money', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+      ], outcomeText: '你同意了做定制插件但不动核心产品。客户满意了，你的产品也没被带偏——两全其美。' },
     ], repeatable: false,
   },
   {
@@ -348,6 +430,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '线上参加，专注开发', effects: [
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你录了个视频播放。台下有人嘀咕"本人呢？"。' },
+      { id: 'c', text: '让社区用户帮你宣传这次演讲', effects: [
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你让老用户在社交平台上帮忙扩散。用户替你说话比你自己说管用一百倍。' },
     ], repeatable: false,
   },
   {
@@ -363,6 +449,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '快速修复但低调处理', effects: [
         { type: 'resource', target: 'reputation', value: -15, operation: 'add' },
       ], outcomeText: 'Bug修了但没沟通好。用户觉得"你不在乎"，信任需要更长时间重建。' },
+      { id: 'c', text: '写一份详细的故障复盘报告', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+      ], outcomeText: '你写了一篇详细的事故复盘。技术圈都在转发——"这是我见过最认真的故障报告"。' },
     ], repeatable: false,
   },
   {
@@ -377,6 +467,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '做好产品就是对用户最好的回报', effects: [
         { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '你默默优化了一个feature。有时候最好的感谢是把产品做得更好。' },
+      { id: 'c', text: '请他写一篇使用心得/推荐语', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '用户很乐意写了一段推荐语。真实的用户故事比任何广告都有说服力。' },
     ], repeatable: false,
   },
 
@@ -395,6 +489,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 20, operation: 'add' },
         { type: 'resource', target: 'energy', value: -5, operation: 'add' },
       ], outcomeText: '"饥饿营销"反而让更多人想来。你的店有了"预约才能喝"的传说。' },
+      { id: 'c', text: '借热度推一些店里的周边产品', effects: [
+        { type: 'resource', target: 'money', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你趁热度推出了自己烘焙的咖啡豆。粉丝来店里顺便带一包回家——二次消费被激活了。' },
     ], repeatable: false,
   },
   {
@@ -410,6 +508,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -10, operation: 'add' },
         { type: 'resource', target: 'energy', value: -20, operation: 'add' },
       ], outcomeText: '新店更小但租金便宜。老顾客说"虽然远了但还是会来"。' },
+      { id: 'c', text: '跟房东谈分期涨租，减少冲击', effects: [
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+        { type: 'resource', target: 'money', value: -8, operation: 'add' },
+      ], outcomeText: '你说服房东分两年涨租。压力被分摊了——他同意了因为你从来不拖欠。' },
     ], repeatable: false,
   },
   {
@@ -425,6 +527,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -10, operation: 'add' },
         { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '价格战打不过星巴克。你意识到和巨无霸拼价格是死路一条。' },
+      { id: 'c', text: '另辟蹊径做外卖咖啡配送', effects: [
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+        { type: 'resource', target: 'money', value: 8, operation: 'add' },
+      ], outcomeText: '你开始做咖啡外卖。每天早高峰写字楼的订单比你想象中多得多。' },
     ], repeatable: false,
   },
   {
@@ -440,6 +546,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
         { type: 'resource', target: 'energy', value: -5, operation: 'add' },
       ], outcomeText: '你在角落留了个"老王的位子"。其他顾客知道故事后，更爱这家店了。' },
+      { id: 'c', text: '帮他在新城市找找有没有好的咖啡店', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你帮他在新城市搜了几家不错的店。他说"下次你来我的城市，我请你喝咖啡"。' },
     ], repeatable: false,
   },
   {
@@ -455,6 +565,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 10, operation: 'add' },
         { type: 'resource', target: 'reputation', value: -15, operation: 'add' },
       ], outcomeText: '换了豆子后，有熟客问"今天的咖啡味道不太一样？"你心里一紧。' },
+      { id: 'c', text: '跟供应商谈长期合作争取优惠价', effects: [
+        { type: 'resource', target: 'money', value: 5, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你跟豆子供应商签了长期合同，价格锁定了一年。稳定供应比什么都重要。' },
     ], repeatable: false,
   },
   {
@@ -471,6 +585,11 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你免费教了几个顾客。他们成了你最忠实的朋友，带来了更多新客人。' },
+      { id: 'c', text: '录制成线上课程放到网上', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'money', value: 5, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你把课程录成视频放上网，意外收获了一批线上学生。咖啡教室变成线上线下双模式。' },
     ], repeatable: false,
   },
 
@@ -489,6 +608,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你说"按合同第三条第2款，免费修改上限是3次"。对方愣了一下，乖乖结了尾款。' },
+      { id: 'c', text: '坚持按合同改，但额外送一版自己的方案', effects: [
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+      ], outcomeText: '你按合同改了7稿后额外做了一版你觉得更好的。甲方看了说"这个好，就用这个"。' },
     ], repeatable: false,
   },
   {
@@ -505,6 +628,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 15, operation: 'add' },
         { type: 'resource', target: 'energy', value: -10, operation: 'add' },
       ], outcomeText: '你婉拒了。虽然可惜，但你知道把所有希望寄托在一个大客户上很危险。' },
+      { id: 'c', text: '谈一个固定时间合作分期推进', effects: [
+        { type: 'resource', target: 'money', value: 20, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+      ], outcomeText: '你提出分阶段交付，每周投入固定时间。既接了大单又没有完全放弃其他客户。' },
     ], repeatable: false,
   },
   {
@@ -521,6 +648,9 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' },
         { type: 'flag', target: 'got_burned', value: true, operation: 'set' },
       ], outcomeText: '你花了两天做方案，对方说"感觉不太对"就消失了。吃一堑长一智。' },
+      { id: 'c', text: '出一版简单的免费草稿试探诚意', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你只出了一版极简的草稿。对方看了之后说"能不能详细一点？"你回"可以，先签合同"。' },
     ], repeatable: false,
   },
   {
@@ -536,6 +666,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
         { type: 'resource', target: 'energy', value: -5, operation: 'add' },
       ], outcomeText: '你用心做好新项目，用作品回报了推荐。老客户说下次还给你介绍。' },
+      { id: 'c', text: '给老客户一个专属折扣码让他分享', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'money', value: -3, operation: 'add' },
+      ], outcomeText: '你给老客户设置了专属推荐折扣。他帮忙转介绍了两个新客户——口碑比广告管用。' },
     ], repeatable: false,
   },
   {
@@ -551,6 +685,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
         { type: 'resource', target: 'energy', value: -10, operation: 'add' },
       ], outcomeText: '你在介绍里加入了"设计理念说明"。客户发现你给的不仅是图，是完整的方案。' },
+      { id: 'c', text: '把AI当成辅助工具融入工作流', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'money', value: 8, operation: 'add' },
+      ], outcomeText: '你用AI做初稿然后用你的审美修改。效率翻了一倍——工具是你的助手不是替代品。' },
     ], repeatable: false,
   },
   {
@@ -567,6 +705,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
         { type: 'resource', target: 'money', value: 10, operation: 'add' },
       ], outcomeText: '没获奖，但提名本身已经给你的简历增添了一笔。' },
+      { id: 'c', text: '在社交平台上分享参赛心得', effects: [
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你写了篇长文分享参赛过程中的设计思考。文章比获奖本身传播更广。' },
     ], repeatable: false,
   },
 
@@ -584,6 +726,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: -20, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '你做了一个自己的官网和社群。用户不多但全是你的。' },
+      { id: 'c', text: '在平台上免费分享一些引流内容', effects: [
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你定期在平台写免费文章。读者被内容吸引自然买了课——用内容带转化是最稳的。' },
     ], repeatable: false,
   },
   {
@@ -600,6 +746,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: -20, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
       ], outcomeText: '你大幅更新了课程内容，加入了直播答疑。学员说"盗版跟不上更新的速度"。' },
+      { id: 'c', text: '把免费传播当成引流手段', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你不追究盗版反而在视频里加了引流信息。免费传播带来了更多付费学员——格局打开了。' },
     ], repeatable: false,
   },
   {
@@ -615,6 +765,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
         { type: 'resource', target: 'energy', value: -10, operation: 'add' },
       ], outcomeText: '你列了一串学员成果数据。数字面前，质疑声小了很多。' },
+      { id: 'c', text: '邀请学员代表参与课程改进', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你请了几个学员代表提建议改课程。让他们参与进来——质疑变成了共建。' },
     ], repeatable: false,
   },
   {
@@ -629,6 +783,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒请客，但为他开心', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你回了"好好干，以后你也会成为别人的老师"。他很感动。' },
+      { id: 'c', text: '邀请他做一期嘉宾分享', effects: [
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你请他做了一次嘉宾分享。学员看到师兄的成功——比你说一百遍都管用。' },
     ], repeatable: false,
   },
   {
@@ -644,6 +802,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: -10, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '你发动老学员写真实评价。一星差评很快被真实的五星淹没了。' },
+      { id: 'c', text: '邀请老学员留下真实评价', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你私信了十几个老学员请他们写真实反馈。好评涌进来之后差评就看不见了。' },
     ], repeatable: false,
   },
   {
@@ -659,6 +821,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒，专注线上课程', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你说"我更适合做线上"。有时候说不比说好更需要勇气。' },
+      { id: 'c', text: '把培训录下来做成线上的企业版课程', effects: [
+        { type: 'resource', target: 'money', value: 18, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+      ], outcomeText: '你把企业培训内容录成了标准课。一次培训变成了一门可以反复卖的产品。' },
     ], repeatable: false,
   },
 
@@ -676,6 +843,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
         { type: 'resource', target: 'money', value: 5, operation: 'add' },
       ], outcomeText: '画质确实不如竞品，但你的内容确实好。学员说"我是来学东西的，不是来看电影的"。' },
+      { id: 'c', text: '把手机当成一个有趣的风格来用', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '你用手机拍了一段"开工前Vlog"当课程彩蛋。学员说"这种真实感比完美画质更好"。' },
     ], repeatable: false,
   },
   {
@@ -691,6 +862,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
       ], outcomeText: '你同时在三个平台发布，虽然累但每个平台都有收入。' },
+      { id: 'c', text: '只签独家给最赚钱的那个平台', effects: [
+        { type: 'resource', target: 'money', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你只在销量最高的平台签了独家。其他平台继续自由分发——选择性独家，主动权在你手里。' },
     ], repeatable: false,
   },
   {
@@ -705,6 +880,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '接受现实，买课的人本就如此', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你不再纠结完课率。有人学了就值了，你安慰自己。' },
+      { id: 'c', text: '搞一个打卡返现活动激励完课', effects: [
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'money', value: -5, operation: 'add' },
+      ], outcomeText: '你推出了"学完退一半"的活动。完课率飙升——虽然少赚了点但口碑好了。' },
     ], repeatable: false,
   },
   {
@@ -720,6 +900,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 20, operation: 'add' },
         { type: 'resource', target: 'money', value: 5, operation: 'add' },
       ], outcomeText: '学员不多但极其忠诚。有人说"你的课是唯一值得反复看的"。' },
+      { id: 'c', text: '问问学员他们最想学什么', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你做了个问卷。原来学员最想学的不是AI也不是深度内容——而是"如何坚持学习"。' },
     ], repeatable: false,
   },
   {
@@ -735,6 +919,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -10, operation: 'add' },
         { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '降价后销量短暂回升，但利润薄了。你感觉陷入了价格战的泥潭。' },
+      { id: 'c', text: '把免费内容作为课程配套的学习材料', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你坦然接受了"网上有免费的"这个事实，然后把付费课的差异化做在了辅导和答疑上。' },
     ], repeatable: false,
   },
   {
@@ -749,6 +937,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '保持轻松氛围，不加框架', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '社群保持了自然的氛围。有时候不加管理就是最好的管理。' },
+      { id: 'c', text: '给助教一些课程分成的激励', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'money', value: -5, operation: 'add' },
+      ], outcomeText: '你给助教们设置了推荐分成。他们更有动力了——每带一个新学员都有收益。' },
     ], repeatable: false,
   },
 
@@ -766,6 +958,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -15, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '你全部退款并真诚道歉。这个举动反而让客户更信任你了——"下次还找你"。' },
+      { id: 'c', text: '以后走正规清关渠道避免麻烦', effects: [
+        { type: 'resource', target: 'money', value: -8, operation: 'add' },
+        { type: 'resource', target: 'health', value: 10, operation: 'add' },
+      ], outcomeText: '你研究了一下正规清关流程。虽然成本高了但再也不用提心吊胆等包裹了。' },
     ], repeatable: false,
   },
   {
@@ -782,6 +978,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 10, operation: 'add' },
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你选择小步快跑。不把鸡蛋放在一个篮子里是对的。' },
+      { id: 'c', text: '少量试单，确认渠道稳定再说', effects: [
+        { type: 'resource', target: 'money', value: 8, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你先下了几单小的测试渠道。第一批顺利走完才加大投入——稳妥总比冒险好。' },
     ], repeatable: false,
   },
   {
@@ -796,6 +996,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '观望，走一步看一步', effects: [
         { type: 'resource', target: 'health', value: -10, operation: 'add' },
       ], outcomeText: '不确定性让你焦虑。每次看到相关新闻都会紧张一下。' },
+      { id: 'c', text: '找代理报关公司帮忙处理', effects: [
+        { type: 'resource', target: 'money', value: -8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+      ], outcomeText: '你找了家报关代理。虽然花了手续费但专业的事交给专业的人——少操很多心。' },
     ], repeatable: false,
   },
   {
@@ -810,6 +1015,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '保持线上，专业的边界感', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你含蓄地婉拒了。保持专业的距离也是一种保护。' },
+      { id: 'c', text: '拉一个小群让老客户互相交流', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '你建了个老客户分享群。她们在里面互相推荐商品——你变成了群里的KOL。' },
     ], repeatable: false,
   },
   {
@@ -825,6 +1034,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: -15, operation: 'add' },
         { type: 'resource', target: 'money', value: 5, operation: 'add' },
       ], outcomeText: '客户不接受解释，在朋友圈曝光了你。信誉一旦受损很难修复。' },
+      { id: 'c', text: '以后每次发货都拍视频留证', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你制定了一套发货留证流程。虽然多了一步但以后的每一单都有据可查。' },
     ], repeatable: false,
   },
   {
@@ -841,6 +1054,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你婉拒了投资。一个人自由自在，挺好的。' },
+      { id: 'c', text: '先试水一个小众品类看看效果', effects: [
+        { type: 'resource', target: 'money', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你先做了一个细分品类的小平台。数据跑通了再扩大——小步试错比一上来就做大风险低。' },
     ], repeatable: false,
   },
 
@@ -857,6 +1074,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '不去打扰，定时放粮铲屎即可', effects: [
         { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '猫安全地度过了寄养期。但主人接猫时说"它好像不太开心"。' },
+      { id: 'c', text: '用逗猫棒和零食慢慢建立信任', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你用零食和耐心换来了猫的信任。第四天它主动跳到你腿上——驯服一只不亲人的猫是最大成就感。' },
     ], repeatable: false,
   },
   {
@@ -873,6 +1094,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'health', value: -10, operation: 'add' },
         { type: 'resource', target: 'reputation', value: -10, operation: 'add' },
       ], outcomeText: '好在最后没什么大事。但如果真的严重，这一夜的拖延可能就是致命的。' },
+      { id: 'c', text: '打视频给狗主人让他看看情况', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+      ], outcomeText: '你打视频给主人，他远程看到狗的状态后很放心——"交给你我太安心了"。' },
     ], repeatable: false,
   },
   {
@@ -887,6 +1112,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '谨慎对待，怕名人麻烦', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你婉拒了合作。有时候平静比名气更重要。' },
+      { id: 'c', text: '请博主在朋友圈帮你推荐一下', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '博主在朋友圈帮你说了句话。信任背书比打广告有用——养宠圈很小但很紧密。' },
     ], repeatable: false,
   },
   {
@@ -901,6 +1130,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '提高价格，控制数量', effects: [
         { type: 'resource', target: 'money', value: 10, operation: 'add' },
       ], outcomeText: '你提了价，淘汰了一些价格敏感客户。少做几单但每单利润高了。' },
+      { id: 'c', text: '先试试家庭式寄养扩大容量', effects: [
+        { type: 'resource', target: 'money', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你和附近几个宠物主达成了合作。家庭互助——不用租场地就扩大了容量。' },
     ], repeatable: false,
   },
   {
@@ -916,6 +1149,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: -5, operation: 'add' },
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你送了邻居几盒点心，诚恳解释了一番。邻居虽然没再投诉但明显不太高兴。' },
+      { id: 'c', text: '主动参加社区活动搞好邻里关系', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+      ], outcomeText: '你参加了社区义工活动。邻居们对你改观了——"哦原来你不是开狗场的是开宠物酒店的"。' },
     ], repeatable: false,
   },
   {
@@ -931,6 +1168,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 10, operation: 'add' },
         { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '狗在你这里过得很好。但你心里知道，这不是长久之计。' },
+      { id: 'c', text: '帮主人联系宠物行为训练师', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你联系了训练师帮主人解决狗狗的行为问题。主人重新找回了信心——不弃养了。' },
     ], repeatable: false,
   },
 
@@ -949,6 +1190,11 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 8, operation: 'add' },
         { type: 'resource', target: 'energy', value: -15, operation: 'add' },
       ], outcomeText: '你接了些零活。钱不多但至少不用天天看余额了。' },
+      { id: 'c', text: '自己做饭带便当减少外卖开支', effects: [
+        { type: 'resource', target: 'money', value: 5, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你开始自己做便当。省了钱也健康了——虽然洗碗有点烦但看着余额心里踏实。' },
     ], repeatable: true,
   },
   {
@@ -963,6 +1209,9 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'energy', value: 5, operation: 'add' },
         { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '你说了句"挺好的"就挂了。这或许是最累的部分——孤独地撑起一切。' },
+      { id: 'c', text: '给妈妈发几张工作日常的照片', effects: [
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+      ], outcomeText: '你发了几张最近做的工作照片给她。她回"原来你每天都在做这些啊，看起来很有意思"。' },
     ], repeatable: true,
   },
   {
@@ -978,6 +1227,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '保持警惕，商业是商业', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你保持了该有的距离。也许是对的，也许是错过了一个盟友。' },
+      { id: 'c', text: '先分享一个自己的经验建立信任', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '你先分享了自己的一个实操经验。对方觉得你真诚——后面聊得就深入了。' },
     ], repeatable: true,
   },
   {
@@ -995,6 +1248,11 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'health', value: -15, operation: 'add' },
         { type: 'flag', target: 'burnout_count', value: true, operation: 'set' },
       ], outcomeText: '你灌下第三杯咖啡。手在抖，但还是打开了文档。这条路是你选的。' },
+      { id: 'c', text: '去做一次按摩或者泡个澡', effects: [
+        { type: 'resource', target: 'health', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: 8, operation: 'add' },
+        { type: 'resource', target: 'money', value: -8, operation: 'add' },
+      ], outcomeText: '你约了个按摩，好好放松了一下。身体不是机器——保养好了才能继续干。' },
     ], repeatable: true,
   },
   {
@@ -1010,6 +1268,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
         { type: 'resource', target: 'energy', value: -5, operation: 'add' },
       ], outcomeText: '你把新客户的项目做得超出预期。信任的链条又延长了一环。' },
+      { id: 'c', text: '请老客户允许把他的推荐语贴在网上', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '你把客户的推荐语做成了案例页。新客户看完直接说"不用介绍了，我信了"。' },
     ], repeatable: true,
   },
   {
@@ -1024,6 +1286,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '不想了，先把手头的事做好', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你收起计算器。有时候想太多反而是最大的内耗。' },
+      { id: 'c', text: '写一份半年行动计划贴在墙上', effects: [
+        { type: 'resource', target: 'energy', value: 5, operation: 'add' },
+        { type: 'resource', target: 'health', value: 3, operation: 'add' },
+      ], outcomeText: '你写了一份六个目标的大字贴在墙上。每天早上看到它——比喝咖啡还提神。' },
     ], repeatable: true,
   },
   {
@@ -1038,6 +1304,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '轻描淡写带过去', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你说了句"混口饭吃"，转移了话题。有些路不需要解释，走通了别人自然能看到。' },
+      { id: 'c', text: '反问他们公司最近怎么样', effects: [
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+        { type: 'resource', target: 'health', value: 3, operation: 'add' },
+      ], outcomeText: '你反问了回去。他们开始抱怨公司——你发现原来大家各有各的烦恼。' },
     ], repeatable: true,
   },
   {
@@ -1054,6 +1324,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'health', value: 15, operation: 'add' },
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你决定先停下来想一想下一步。有时候后退一步是为了更好地前进。' },
+      { id: 'c', text: '把这次失败写成一篇经验总结', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你写了篇《失败的3个教训》。文章发出后很多同行留言——"写的太真实了"。' },
     ], repeatable: false,
   },
   // ======== 补充事件：每个行业+4个 ========
@@ -1067,6 +1341,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '坚持做视频不做直播', effects: [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' }, { type: 'resource', target: 'energy', value: -5, operation: 'add' },
       ], outcomeText: '你说"我的优势在剪辑和内容，不是实时互动"。清楚自己边界也是本事。' },
+      { id: 'c', text: '找朋友一起搭档直播，互相壮胆', effects: [
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你拉了一个朋友搭档，有说有笑地播了一晚上。两个人总比一个人好玩。' },
     ], repeatable: false,
   },
   { id: 'sv_008', category: 'crisis', industries: ['short_video', 'self_media'], weight: 6,
@@ -1078,6 +1356,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '跟客户协商延期', effects: [
         { type: 'resource', target: 'money', value: -8, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '客户理解并同意延期。你用了更好的设备拍出更好的片子，反而赚了口碑。' },
+      { id: 'c', text: '用朋友/同行的设备先借来用', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 3, operation: 'add' },
+      ], outcomeText: '你跟同行借了设备应急。江湖救急——之前帮过的人这次回报你了。' },
     ], repeatable: false,
   },
   { id: 'sv_009', category: 'narrative', industries: ['short_video', 'self_media'], weight: 7,
@@ -1089,6 +1371,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '保持原有风格，这只是彩蛋', effects: [
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你把它当作偶尔的温情内容。粉丝说"每次这种视频都有惊喜"。' },
+      { id: 'c', text: '把这个视频发给奶奶看', effects: [
+        { type: 'resource', target: 'health', value: 12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你给奶奶看了视频，她笑着说"我哪有那么好"。你抱着她——这条视频的意义已经超越了流量。' },
     ], repeatable: false,
   },
   { id: 'sv_010', category: 'neutral', industries: ['short_video', 'self_media'], weight: 6,
@@ -1100,6 +1386,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '提高更新频率来弥补', effects: [
         { type: 'resource', target: 'energy', value: -25, operation: 'add' }, { type: 'resource', target: 'health', value: -10, operation: 'add' }, { type: 'resource', target: 'money', value: 5, operation: 'add' },
       ], outcomeText: '拼命更新暂时稳住了收入，但你很清楚这不是长久之计。' },
+      { id: 'c', text: '跟平台客服沟通反馈意见', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 3, operation: 'add' },
+      ], outcomeText: '你找客服反映了分成调整的影响。虽然一个人声音不大，但大家都去反馈就有用了。' },
     ], repeatable: false,
   },
   // -- 外卖代运营额外事件 --
@@ -1112,6 +1402,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '用产品说话，不买流量', effects: [
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你婉拒了。靠口碑慢慢来，虽然慢但每一步都扎实。' },
+      { id: 'c', text: '跟博主谈置换合作（产品换推广）', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你用产品抵扣了推广费。博主吃了之后真心喜欢，写得比花钱买的还真诚。' },
     ], repeatable: false,
   },
   { id: 'fd_008', category: 'crisis', industries: ['food_delivery', 'daigou'], weight: 5,
@@ -1123,6 +1417,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '发动老客户写好评对冲', effects: [
         { type: 'resource', target: 'energy', value: -10, operation: 'add' }, { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '老客户很给力，一天之内刷了几十条好评。差评被淹没在好评的海洋里。' },
+      { id: 'c', text: '主动联系骑手了解问题根源', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你跟骑手聊了聊，发现是平台派单机制的问题。你帮他在平台申诉——矛盾化解了。' },
     ], repeatable: false,
   },
   { id: 'fd_009', category: 'narrative', industries: ['food_delivery', 'daigou'], weight: 6,
@@ -1134,6 +1433,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '尊重他的选择，帮他善后', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'money', value: -10, operation: 'add' },
       ], outcomeText: '你帮他处理了关店的善后工作。他说"谢谢你，以后有好项目再找你"。' },
+      { id: 'c', text: '帮他算一笔账，看看有没有出路', effects: [
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+      ], outcomeText: '你们一起分析了经营数据，发现午餐时段有很大优化空间。他决定再试试。' },
     ], repeatable: false,
   },
   { id: 'fd_010', category: 'opportunity', industries: ['food_delivery', 'daigou'], weight: 5,
@@ -1145,6 +1448,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '专注C端外卖，不做团餐', effects: [
         { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '团餐B端和外卖C端是完全不同的逻辑。你说"我不贪多，做好一件事就够了"。' },
+      { id: 'c', text: '先接小规模的午餐试水', effects: [
+        { type: 'resource', target: 'money', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你从100人份做起。供应链跑顺了再加量——一口气吃不成胖子。' },
     ], repeatable: false,
   },
   // -- 自媒体写稿额外事件 --
@@ -1157,6 +1464,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '吸取教训，以后先收定金', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你改了合同模板，新加了"50%预付"。吃一堑长一智，不算白亏。' },
+      { id: 'c', text: '把这家品牌列入行业黑名单分享出去', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你整理了一份靠谱合作方的名单分享给同行。大家说"终于有人做这个了"。' },
     ], repeatable: false,
   },
   { id: 'sm_008', category: 'opportunity', industries: ['self_media', 'knowledge_pay', 'online_course'], weight: 6,
@@ -1168,6 +1479,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒，专注自己的调性', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你说"保持自己的节奏更重要"。大V回了一句"理解，真正的创作者都这样"。' },
+      { id: 'c', text: '试试交换一篇稿子看看效果', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你先试了一篇互推，数据还不错。不着急大规模合作——小步快跑最稳妥。' },
     ], repeatable: false,
   },
   { id: 'sm_009', category: 'narrative', industries: ['self_media', 'knowledge_pay', 'online_course'], weight: 6,
@@ -1179,6 +1494,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '写一篇回信公开感谢', effects: [
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' }, { type: 'resource', target: 'energy', value: -10, operation: 'add' },
       ], outcomeText: '你写了篇《致一位读者》作为回信。评论区成了大型"你的文字也改变了我"合集。' },
+      { id: 'c', text: '把这笔钱捐给一个你关心的项目', effects: [
+        { type: 'resource', target: 'health', value: 12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'money', value: -5, operation: 'add' },
+      ], outcomeText: '你把钱捐了出去并在文章里感谢了那位读者。善意是会传染的——更多人开始打赏。' },
     ], repeatable: false,
   },
   { id: 'sm_010', category: 'neutral', industries: ['self_media', 'knowledge_pay', 'online_course'], weight: 5,
@@ -1190,6 +1510,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '硬写，哪怕质量一般', effects: [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '憋出来的文章发了。读者留言"这篇感觉不在状态"。你苦笑了一下。' },
+      { id: 'c', text: '翻翻过去的读者留言找找灵感', effects: [
+        { type: 'resource', target: 'energy', value: 5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 3, operation: 'add' },
+      ], outcomeText: '你翻看了过去几个月的读者留言。有人说过"希望你能写一写XX话题"——这不就是选题吗。' },
     ], repeatable: true,
   },
   // -- 独立开发者额外事件 --
@@ -1202,6 +1526,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '专注自己的产品', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你默默优化了自己的产品。有时候影响力不是追来的，是产品自己挣来的。' },
+      { id: 'c', text: '只贡献一个你擅长的小模块', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你只贡献了一个小功能但做得很精致。社区说"质量比数量重要"。' },
     ], repeatable: false,
   },
   { id: 'id_008', category: 'crisis', industries: ['indie_dev', 'design_freelance'], weight: 5,
@@ -1213,6 +1541,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '公开说明故障原因+快速修复', effects: [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '故障恢复了但信任损失不小。不过你写的故障复盘文章被很多开发者转发收藏。' },
+      { id: 'c', text: '借这次事故升级基础设施', effects: [
+        { type: 'resource', target: 'energy', value: -25, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'money', value: -10, operation: 'add' },
+      ], outcomeText: '你趁机升级了整个架构。虽然累但以后再也不会因为同样的问题宕机了。' },
     ], repeatable: false,
   },
   { id: 'id_009', category: 'neutral', industries: ['indie_dev', 'design_freelance'], weight: 6,
@@ -1224,6 +1557,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '能跑就别动，专注功能开发', effects: [
         { type: 'resource', target: 'money', value: 10, operation: 'add' }, { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '老代码虽然丑但稳。你把时间花在了新功能上，用户反而更开心。' },
+      { id: 'c', text: '新老框架并存，逐步迁移', effects: [
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你选择了渐进式迁移。不急不躁——老代码慢慢退休，新代码稳步上线。' },
     ], repeatable: false,
   },
   { id: 'id_010', category: 'narrative', industries: ['indie_dev', 'design_freelance'], weight: 5,
@@ -1235,6 +1572,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '把产品翻译成多语言版本', effects: [
         { type: 'resource', target: 'energy', value: -20, operation: 'add' }, { type: 'resource', target: 'reputation', value: 20, operation: 'add' }, { type: 'flag', target: 'went_international', value: true, operation: 'set' },
       ], outcomeText: '你做了多语言版本。巴西用户自发帮你翻译了葡萄牙语版——免费的。' },
+      { id: 'c', text: '给他寄一些中国特色的开发者周边', effects: [
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+        { type: 'resource', target: 'money', value: -3, operation: 'add' },
+      ], outcomeText: '你寄了一些小礼物过去。他说这是他收到的最有趣的国际快递——你多了个巴西朋友。' },
     ], repeatable: false,
   },
   // -- 咖啡小店额外事件 --
@@ -1247,6 +1589,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '能用的尽量用，节约成本', effects: [
         { type: 'resource', target: 'money', value: 5, operation: 'add' }, { type: 'resource', target: 'reputation', value: -15, operation: 'add' }, { type: 'resource', target: 'health', value: -10, operation: 'add' },
       ], outcomeText: '省了一点钱但有顾客喝了变质牛奶投诉了你。得不偿失。' },
+      { id: 'c', text: '联系保险公司看看能不能申请理赔', effects: [
+        { type: 'resource', target: 'money', value: 5, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你发现店铺保险里包含自然灾害条款，拿到了部分理赔。保险不能白买。' },
     ], repeatable: false,
   },
   { id: 'cs_008', category: 'opportunity', industries: ['coffee_shop', 'pet_care'], weight: 6,
@@ -1258,6 +1604,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '不参加比赛，专心开店', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你把备赛的时间花在了服务客人上。有老客人说"你做的咖啡不需要奖杯证明"。' },
+      { id: 'c', text: '让熟客帮忙投票助威', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+      ], outcomeText: '熟客们在社交平台上疯狂帮你拉票。你发现他们比你自己还上心。' },
     ], repeatable: false,
   },
   { id: 'cs_009', category: 'narrative', industries: ['coffee_shop', 'pet_care'], weight: 7,
@@ -1269,6 +1619,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '简单配合但保持低调', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你在角落帮他们默默安排。求婚成功后新人给你深深鞠了一躬。你不用发朋友圈——心里已经满足了。' },
+      { id: 'c', text: '把这个故事写下来贴在店里的墙上', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你把求婚故事和照片裱起来挂在墙上。新客人进来都会驻足看看——这是这家店独一无二的温度。' },
     ], repeatable: false,
   },
   { id: 'cs_010', category: 'neutral', industries: ['coffee_shop', 'pet_care'], weight: 5,
@@ -1280,6 +1634,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '只做一家，做到极致', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
       ], outcomeText: '你把一家店做到了极致。有人从隔壁城市专门来喝你的咖啡。' },
+      { id: 'c', text: '先试试移动咖啡车或快闪店', effects: [
+        { type: 'resource', target: 'money', value: -8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你搞了一辆咖啡车在周末市集试水。成本低了很多——先试试水温再决定开不开店。' },
     ], repeatable: false,
   },
   // -- 设计接单额外事件 --
@@ -1292,6 +1651,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒，不熟悉的领域不碰', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你对区块链不熟，不想踩坑。三个月后那个项目暴雷了——你庆幸自己躲过一劫。' },
+      { id: 'c', text: '先做一个小功能试用看看效果', effects: [
+        { type: 'resource', target: 'money', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你接了一个小模块先试试。Web3那帮人挺好合作的——比传统客户爽快。' },
     ], repeatable: false,
   },
   { id: 'df_008', category: 'crisis', industries: ['design_freelance', 'indie_dev'], weight: 5,
@@ -1303,6 +1666,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '不管了，反正我的客户认的是我', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '你默念"模仿是最好的赞美"然后继续工作。专注做好自己就够了。' },
+      { id: 'c', text: '把你自己的原创新版本做得更好，拉开差距', effects: [
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+      ], outcomeText: '你迭代了一版全新的设计。模仿者还在抄上一版的时候你已经又进化了。' },
     ], repeatable: false,
   },
   { id: 'df_009', category: 'narrative', industries: ['design_freelance', 'indie_dev'], weight: 7,
@@ -1314,6 +1681,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '按正常流程走，专业高效', effects: [
         { type: 'resource', target: 'money', value: 5, operation: 'add' },
       ], outcomeText: '你给了一个合理的方案。他说"谢谢你没有因为故事砍价或加价"。' },
+      { id: 'c', text: '把这次的设计过程记录下来放到作品集里', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你把设计背后的故事写进了作品集。后来好多客户说"看了这个故事才决定找你"。' },
     ], repeatable: false,
   },
   { id: 'df_010', category: 'neutral', industries: ['design_freelance', 'indie_dev'], weight: 6,
@@ -1325,6 +1696,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '推荐他看一些好的教程', effects: [
         { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '你列了一份书单和教程给他。他说"虽然没有拜师，但你帮了我很多"。' },
+      { id: 'c', text: '让他先跟着你做几次，以项目合作形式', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你带他做了几个小项目。虽然不算正式师徒但确实帮到了他——有个领路人比自己摸索快多了。' },
     ], repeatable: false,
   },
   // -- 知识付费额外事件 --
@@ -1337,6 +1712,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '降价竞争，保住市场份额', effects: [
         { type: 'resource', target: 'money', value: -10, operation: 'add' }, { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '降价后销量回升了一点，但利润薄了很多。你开始怀疑自己在做慈善教育。' },
+      { id: 'c', text: '跟大平台的课做对比表突出你的差异', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你做了一张对比表——"大平台课 vs 实战派课"。差异化一目了然，反而吸引了一批人。' },
     ], repeatable: false,
   },
   { id: 'kp_008', category: 'opportunity', industries: ['knowledge_pay', 'online_course', 'self_media'], weight: 6,
@@ -1348,6 +1727,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒，低调做好自己的事', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你说"还没做出什么了不起的成绩"。但这个年代，低调反而让人更好奇。' },
+      { id: 'c', text: '主动联系电视台提供行业数据支持', effects: [
+        { type: 'resource', target: 'reputation', value: 20, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你给节目组提供了一些行业数据作为背景素材。虽然没上镜但行业影响力提升了。' },
     ], repeatable: false,
   },
   { id: 'kp_009', category: 'narrative', industries: ['knowledge_pay', 'online_course', 'self_media'], weight: 6,
@@ -1359,6 +1742,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '心里有点复杂但表面无所谓', effects: [
         { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '你嘴上说着没关系，但心里有点不是滋味。也许这也是成长的一部分。' },
+      { id: 'c', text: '跟他合作做一门联合课程', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'money', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你们一起开发了一门进阶课。师徒合作——他的新视角加上你的经验，效果出奇好。' },
     ], repeatable: false,
   },
   { id: 'kp_010', category: 'neutral', industries: ['knowledge_pay', 'online_course', 'self_media'], weight: 5,
@@ -1370,6 +1758,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '以后不免费了，尊重自己的时间', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你觉得"免费"这个标签一旦贴上了就很难撕掉。继续高质量付费内容。' },
+      { id: 'c', text: '免费课上留悬念引导到付费课', effects: [
+        { type: 'resource', target: 'money', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你在免费课每个章节结尾都留了实战作业——"想要更深入的指导？付费课里有"。' },
     ], repeatable: false,
   },
   // -- 网课录制额外事件 --
@@ -1382,6 +1774,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '先凑合用旧设备修一修', effects: [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '勉强修了一下但能听出音质下降。学员没说什么但你知道自己可以做得更好。' },
+      { id: 'c', text: '先用手机录一个临时版本发给学员', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 3, operation: 'add' },
+      ], outcomeText: '你用手机录了个临时版先顶上，说明了情况。学员说"没事，内容才是最重要的"。' },
     ], repeatable: false,
   },
   { id: 'oc_008', category: 'opportunity', industries: ['online_course', 'knowledge_pay', 'self_media'], weight: 5,
@@ -1393,6 +1789,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '专注线上，暂时不考虑出书', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你说"视频才是我的媒介"。节省的时间用在更新课程上，反而订阅数在涨。' },
+      { id: 'c', text: '先整理最精华的两章试水', effects: [
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你先整理了两章内容给出版社看样稿。对方很满意——后续推进就顺利了。' },
     ], repeatable: false,
   },
   { id: 'oc_009', category: 'narrative', industries: ['online_course', 'knowledge_pay', 'self_media'], weight: 7,
@@ -1404,6 +1804,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '寄一份礼物表达祝福', effects: [
         { type: 'resource', target: 'money', value: -5, operation: 'add' }, { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你订了一束花寄过去。附言写"继续加油，以后要成为别人生命中的光"。' },
+      { id: 'c', text: '在现场录一段祝福视频放进课程', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'health', value: 10, operation: 'add' },
+      ], outcomeText: '你在婚礼上录了一段祝福放在课程介绍页。学员说"看到老师这么有人情味，更想学了"。' },
     ], repeatable: false,
   },
   { id: 'oc_010', category: 'neutral', industries: ['online_course', 'knowledge_pay', 'self_media'], weight: 5,
@@ -1415,6 +1819,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '不涨，靠走量', effects: [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '你没涨价的消息在学员群里传开了。有人说"这是我上过性价比最高的课"。' },
+      { id: 'c', text: '做一个阶梯定价：基础版、进阶版、VIP版', effects: [
+        { type: 'resource', target: 'money', value: 12, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你做了三个版本。基础版跑量，VIP版做深度——不同需求不同价格。' },
     ], repeatable: false,
   },
   // -- 代购额外事件 --
@@ -1427,6 +1835,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '照常接单，不投机', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'money', value: 10, operation: 'add' },
       ], outcomeText: '汇率确实让你多赚了一些。你没有贪心，稳扎稳打地接单。' },
+      { id: 'c', text: '趁汇率低帮老客户囤一些他们常买的', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'money', value: 15, operation: 'add' },
+      ], outcomeText: '你通知老客户汇率好先囤货。他们省了钱你赚了单——双赢。' },
     ], repeatable: false,
   },
   { id: 'dg_008', category: 'crisis', industries: ['daigou', 'food_delivery'], weight: 5,
@@ -1438,6 +1850,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '等物流结果出来再说', effects: [
         { type: 'resource', target: 'reputation', value: -10, operation: 'add' },
       ], outcomeText: '又等了一周物流还是没消息。客户虽然没说什么但再也没找你代购了。' },
+      { id: 'c', text: '以后只发有保险的快递', effects: [
+        { type: 'resource', target: 'money', value: -3, operation: 'add' },
+        { type: 'resource', target: 'health', value: 10, operation: 'add' },
+      ], outcomeText: '你之后的每一单都加了保价。多花一点钱但晚上能睡个好觉——值。' },
     ], repeatable: false,
   },
   { id: 'dg_009', category: 'narrative', industries: ['daigou', 'food_delivery'], weight: 6,
@@ -1449,6 +1865,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '适当收一些辛苦费', effects: [
         { type: 'resource', target: 'money', value: 5, operation: 'add' },
       ], outcomeText: '你收了合理的跑腿费。客户说"应该的，你花了那么多时间"。' },
+      { id: 'c', text: '顺便问问她有没有其他妈妈也需要', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'money', value: 5, operation: 'add' },
+      ], outcomeText: '客户帮你介绍了她妈妈群的朋友。一传十——母婴圈的口碑来得快去得也快，必须维护好。' },
     ], repeatable: false,
   },
   { id: 'dg_010', category: 'neutral', industries: ['daigou', 'food_delivery'], weight: 5,
@@ -1460,6 +1880,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '不说，保护自己的渠道', effects: [
         { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '你不透露货源信息。品牌方没有再追问，但这层窗户纸不知道能撑多久。' },
+      { id: 'c', text: '去了解一下正规授权的条件和流程', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你主动去了解了正规授权怎么做。就算这次不用——以后总有一天会用上。' },
     ], repeatable: false,
   },
   // -- 宠物寄养额外事件 --
@@ -1472,6 +1896,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '自己处理伤口，不上医院', effects: [
         { type: 'resource', target: 'reputation', value: -15, operation: 'add' }, { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '伤口看起来不大你简单包扎了。但主人接狗时发现了异样，非常生气。' },
+      { id: 'c', text: '以后给每只宠物做性格评估再分组', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你建了一套宠物性格评估表。以后来的宠物先测试再分组——从源头避免冲突。' },
     ], repeatable: false,
   },
   { id: 'pc_008', category: 'opportunity', industries: ['pet_care', 'coffee_shop'], weight: 6,
@@ -1483,6 +1911,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '专注于寄养，不做增值服务', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你选择把一件事做好。寄养的口碑在本地圈子里数一数二。' },
+      { id: 'c', text: '先找几个老客户免费试吃看看反馈', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你给几个老客户的狗狗免费尝了宠物蛋糕。反馈很好——正式上线就有订单了。' },
     ], repeatable: false,
   },
   { id: 'pc_009', category: 'narrative', industries: ['pet_care', 'coffee_shop'], weight: 7,
@@ -1494,6 +1926,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '帮它们联系救助组织', effects: [
         { type: 'resource', target: 'energy', value: -5, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你联系了靠谱的救助组织。它们得到了专业的照顾。' },
+      { id: 'c', text: '帮它们拍好看的照片提高领养率', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你给小猫们拍了专业的领养照。好看的照片让两只猫当天就被认领了。' },
     ], repeatable: false,
   },
   { id: 'pc_010', category: 'neutral', industries: ['pet_care', 'coffee_shop'], weight: 5,
@@ -1505,6 +1941,9 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '经验比证书重要', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你没有考证但经验越来越丰富。老客户说"你比有证的还专业"。' },
+      { id: 'c', text: '先自学一些免费课程看看难度', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你找了几个免费的在线课程先学着。觉得内容不难——可以考虑正式报名了。' },
     ], repeatable: false,
   },
   // ======== 贷款系统事件 ========
@@ -1565,6 +2004,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '"混口饭吃"带过去', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你敷衍了一句。亲戚们的眼神似乎在说"果然是混不下去了"。但你知道自己在干嘛。' },
+      { id: 'c', text: '跟妈妈说实话但强调这是你想走的路', effects: [
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 3, operation: 'add' },
+      ], outcomeText: '你说"妈，我知道你担心，但这条路我想自己走"。她沉默了一会——但眼神里多了一点理解。' },
     ], repeatable: true,
   },
   { id: 'family_002', category: 'crisis', industries: 'all', weight: 7, minTurn: 5,
@@ -1576,6 +2019,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '让侄子帮你做点杂活，给点零花钱', effects: [
         { type: 'resource', target: 'money', value: -5, operation: 'add' }, { type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '侄子帮你做了些杂活。虽然效率不高但亲戚关系保住了。他妈逢人就夸你"有出息"。' },
+      { id: 'c', text: '让他儿子帮你做一些线上小任务试试', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你给侄子派了几个线上小任务。做得还不错——说不定以后是个好帮手。' },
     ], repeatable: false,
   },
   { id: 'family_003', category: 'narrative', industries: 'all', weight: 7, minTurn: 8,
@@ -1587,6 +2034,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '打个哈哈过去', effects: [
         { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '你笑而不语。散场后有两个人私下来找你，说想取经——他们也动心了。' },
+      { id: 'c', text: '聊聊创业中遇到的困难让大家知道不是那么容易', effects: [
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+      ], outcomeText: '你坦率地讲了一些难处。同学们反而佩服你——"至少你在做自己想做的事"。' },
     ], repeatable: true,
   },
   { id: 'family_004', category: 'crisis', industries: 'all', weight: 6,
@@ -1598,6 +2049,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '让他们看真实的样子', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你妈看了一圈，说"虽然小但收拾得挺干净"。然后偷偷在你枕头下塞了2000块。' },
+      { id: 'c', text: '把工作环境布置得温馨一些让爸妈放心', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+      ], outcomeText: '你收拾干净了房间摆了几盆绿植。爸妈看了说"虽然小但挺像那么回事的"。' },
     ], repeatable: false,
   },
   // -- Reigns风格：二选一的命运抉择 --
@@ -1611,6 +2066,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '拒了，不碰来路不明的生意', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你拒绝了。两周后听说有人接了这个项目——后来被查了。你庆幸自己没碰。' },
+      { id: 'c', text: '先打听一下这个项目到底是什么', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'health', value: 3, operation: 'add' },
+      ], outcomeText: '你通过多方渠道打听到了项目的真实内容。信息就是力量——知道真相之后再决定。' },
     ], repeatable: false,
   },
   { id: 'reigns_002', category: 'crisis', industries: 'all', weight: 8,
@@ -1622,6 +2081,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '硬撑到底，也许能翻盘', effects: [
         { type: 'resource', target: 'money', value: -5, operation: 'add' }, { type: 'resource', target: 'energy', value: -20, operation: 'add' }, { type: 'resource', target: 'health', value: -10, operation: 'add' },
       ], outcomeText: '你又撑了一个月。结果没有翻盘——但这段经历让你以后做决策更谨慎了。' },
+      { id: 'c', text: '问问客户能不能给一次修正的机会', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你诚恳地请求给一次修正机会。客户同意了——二次机会来之不易，你全力以赴。' },
     ], repeatable: false,
   },
   { id: 'reigns_003', category: 'opportunity', industries: 'all', weight: 6,
@@ -1633,6 +2096,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '选新客户，赚钱要紧', effects: [
         { type: 'resource', target: 'money', value: 25, operation: 'add' }, { type: 'resource', target: 'energy', value: -20, operation: 'add' },
       ], outcomeText: '新项目赚了不少但老客户明显有些失望。你说"下次一定"。但你自己也不确定。' },
+      { id: 'c', text: '能不能把两个客户的时间错开', effects: [
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+        { type: 'resource', target: 'money', value: 18, operation: 'add' },
+      ], outcomeText: '你尝试跟两边协调时间。老客户通情达理地让了一步——两边都接下了但累得够呛。' },
     ], repeatable: false,
   },
   { id: 'reigns_004', category: 'neutral', industries: 'all', weight: 6,
@@ -1644,6 +2111,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '不卖，这是我一手建起来的', effects: [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' }, { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '你拒绝了。这个账号/店铺就像你的孩子——虽然不是最好的但每一点都是你的心血。' },
+      { id: 'c', text: '卖一部分股份保留一部分', effects: [
+        { type: 'resource', target: 'money', value: 15, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你只卖了一半。买家没有完全掌控——你保留了参与权。折中方案两边都满意。' },
     ], repeatable: false,
   },
   // -- Papers Please风格：道德困境 --
@@ -1657,6 +2128,10 @@ export const EVENTS: GameEvent[] = [
         { type: 'resource', target: 'money', value: 20, operation: 'add' }, { type: 'resource', target: 'reputation', value: -15, operation: 'add' }, { type: 'resource', target: 'health', value: -15, operation: 'add' },
         { type: 'flag', target: 'cut_corners', value: true, operation: 'set' },
       ], outcomeText: '钱到手了但每次看到那个客户的微信消息，你的心都会跳一下。' },
+      { id: 'c', text: '帮他把真实数据整理出来看看问题到底在哪', effects: [
+        { type: 'resource', target: 'energy', value: -15, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+      ], outcomeText: '你帮客户分析了真实数据，发现了业绩下滑的真正原因。不用造假——找到真问题就是解决方案。' },
     ], repeatable: false,
   },
   { id: 'moral_002', category: 'crisis', industries: 'all', weight: 7,
@@ -1668,6 +2143,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '匿名爆料', effects: [
         { type: 'resource', target: 'money', value: 15, operation: 'add' }, { type: 'resource', target: 'reputation', value: -10, operation: 'add' }, { type: 'resource', target: 'health', value: -10, operation: 'add' },
       ], outcomeText: '对方确实受到了打击。但你发现——没人信任这个"匿名消息源"，而你每晚都在想这件事。' },
+      { id: 'c', text: '匿名给竞争对手一个善意的提醒', effects: [
+        { type: 'resource', target: 'health', value: 10, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你匿名发了提醒给他。不知道他是谁——但你知道自己做了什么。良心比市场份额更值钱。' },
     ], repeatable: false,
   },
   { id: 'moral_003', category: 'neutral', industries: 'all', weight: 6,
@@ -1679,6 +2158,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '跟同行学，能省就省', effects: [
         { type: 'resource', target: 'money', value: 10, operation: 'add' }, { type: 'resource', target: 'health', value: -10, operation: 'add' }, { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '确实省了一些钱。但每次听到"税务稽查"这个词，你的心都会跳一拍。' },
+      { id: 'c', text: '找个正规的财务咨询一次', effects: [
+        { type: 'resource', target: 'money', value: -6, operation: 'add' },
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+      ], outcomeText: '你找了正规的财务顾问咨询。原来合法的税务优化也有很多方式——不需要冒险。' },
     ], repeatable: false,
   },
   // -- 随机奇遇事件（BitLife风格）--
@@ -1691,6 +2174,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '婉拒，不太信这种偶遇', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你说"谢谢但我不太需要投资"。后来听朋友说那个人确实是想套方案的。' },
+      { id: 'c', text: '先多聊几句看看他到底懂不懂行', effects: [
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你问了他几个专业问题。答得还行——不是骗子。加了微信说有空详聊。' },
     ], repeatable: false,
   },
   { id: 'random_002', category: 'crisis', industries: 'all', weight: 7,
@@ -1702,6 +2189,9 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '接受损失，重新开始', effects: [
         { type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'reputation', value: -5, operation: 'add' },
       ], outcomeText: '你买了个新手机从头来过。有些资料再也找不回来了——以后一定要备份。' },
+      { id: 'c', text: '用查找设备功能远程定位', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你用查找功能定位了手机，发现就在咖啡厅后厨。店员不小心收走了——虚惊一场。' },
     ], repeatable: false,
   },
   { id: 'random_003', category: 'opportunity', industries: 'all', weight: 6,
@@ -1713,6 +2203,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '保持低调神秘', effects: [
         { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
       ], outcomeText: '你没有刻意去认领。匿名推荐带来的神秘感反而让更多人开始关注你。' },
+      { id: 'c', text: '在社交平台上公开感谢这个推荐人', effects: [
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你发了条公开的感谢。虽然没有@具体的人——但他说"看到你的感谢了，很暖心"。' },
     ], repeatable: false,
   },
   { id: 'random_004', category: 'narrative', industries: 'all', weight: 7,
@@ -1724,6 +2218,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '给它买了罐头就走了', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' }, { type: 'resource', target: 'money', value: -2, operation: 'add' },
       ], outcomeText: '你买了罐头给它。第二天经过的时候它还在那里等你。你发现自己每天都去喂它了。' },
+      { id: 'c', text: '在社交媒体上发帖帮它找领养', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '你发了一条领养信息。两天后有人联系你——流浪猫有了新家。' },
     ], repeatable: false,
   },
   { id: 'random_005', category: 'neutral', industries: 'all', weight: 6,
@@ -1735,6 +2233,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '收下这份好意，努力工作回报社会', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你接受了陌生人的好意。有时候接受别人的善意和给予一样重要。' },
+      { id: 'c', text: '下次来的时候多带一份帮后面的人付', effects: [
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+        { type: 'resource', target: 'money', value: -2, operation: 'add' },
+      ], outcomeText: '你第二天多买了一杯留在柜台上。善良是可以传递的——你成了链条上的一环。' },
     ], repeatable: false,
   },
   // -- 自然灾害/意外事件 --
@@ -1747,6 +2249,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '当作强制休假', effects: [
         { type: 'resource', target: 'health', value: 20, operation: 'add' }, { type: 'resource', target: 'energy', value: 10, operation: 'add' }, { type: 'resource', target: 'money', value: -5, operation: 'add' },
       ], outcomeText: '你干脆给自己放了个假。三天后精神焕发地回到工作——效率比连轴转时高多了。' },
+      { id: 'c', text: '去图书馆或共享办公空间临时工作', effects: [
+        { type: 'resource', target: 'money', value: -5, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+      ], outcomeText: '你找了个共享办公空间。虽然花了点钱但有网了——总比完全停摆好。' },
     ], repeatable: false,
   },
   { id: 'disaster_002', category: 'crisis', industries: 'all', weight: 5,
@@ -1758,6 +2264,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '趁封控休息和充电', effects: [
         { type: 'resource', target: 'health', value: 15, operation: 'add' }, { type: 'resource', target: 'energy', value: 10, operation: 'add' }, { type: 'resource', target: 'money', value: -10, operation: 'add' },
       ], outcomeText: '你索性好好休息了两周。读书、做饭、锻炼——这是你创业以来作息最规律的两周。' },
+      { id: 'c', text: '趁这时间学习一项新技能', effects: [
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'skill_point', target: 'skill', value: 1, operation: 'add' },
+      ], outcomeText: '你利用封控期间学了一个新技能。等解封之后你发现自己变强了——坏事变好事。' },
     ], repeatable: false,
   },
   // -- 搞笑/荒诞事件 --
@@ -1770,6 +2281,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '配合他演一下', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你说"快了快了，在路上了"。然后忍着笑回了家。一人在黑暗中创业的孤独被这份荒诞治愈了一点点。' },
+      { id: 'c', text: '回去发了条朋友圈自嘲', effects: [
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你在朋友圈写了被当外卖小哥的事。一堆人评论——"创业狗的日常""我也被认错过"。笑着笑着就哭了。' },
     ], repeatable: false,
   },
   { id: 'funny_002', category: 'narrative', industries: 'all', weight: 6,
@@ -1781,6 +2296,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '证明自己是人类', effects: [
         { type: 'resource', target: 'energy', value: -5, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你说"要不要视频一下？"客户说"算了算了我相信你"。然后继续聊正事。' },
+      { id: 'c', text: '录一段视频证明你是活的', effects: [
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你发了一段自己喝咖啡的视频过去。客户笑了——"这下我信了，你不是AI"。这段小插曲反而拉近了距离。' },
     ], repeatable: false,
   },
   { id: 'funny_003', category: 'narrative', industries: 'all', weight: 6,
@@ -1792,6 +2311,9 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '拿去垫显示器', effects: [
         { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '这本书的高度正好垫高了显示器，你的颈椎舒服了很多。——这是它最大的实用价值。' },
+      { id: 'c', text: '给神秘寄件人发条朋友圈问问', effects: [
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你发了条朋友圈问谁寄的。底下有人说"我寄的，加油"。是一个默默关注你很久的朋友。' },
     ], repeatable: false,
   },
   // -- 季节/天气事件 --
@@ -1804,6 +2326,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '继续埋头工作，春天年年都有', effects: [
         { type: 'resource', target: 'energy', value: -5, operation: 'add' }, { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '你在屋子里工作了一整天。春天确实年年都有——但青春不是。' },
+      { id: 'c', text: '约一个好久不见的朋友去公园散步', effects: [
+        { type: 'resource', target: 'health', value: 12, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你约了朋友。聊了一下午——发现他也想出来自己干。你们互相给了不少启发。' },
     ], repeatable: true,
   },
   { id: 'season_002', category: 'narrative', industries: 'all', weight: 6,
@@ -1815,6 +2341,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '算了，一个人也挺好', effects: [
         { type: 'resource', target: 'energy', value: 10, operation: 'add' },
       ], outcomeText: '你默默地看了看朋友圈然后继续工作。一个人确实挺好的——只是偶尔也会想有人说说话。' },
+      { id: 'c', text: '买两杯奶茶请隔壁的同行喝', effects: [
+        { type: 'resource', target: 'money', value: -3, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你多买了一杯请隔壁也在创业的朋友。他说"你也记得秋天第一杯奶茶啊"。创业者之间的默契。' },
     ], repeatable: false,
   },
   // -- 行业扩展事件（跨行业共享池）--
@@ -1827,6 +2358,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '联系大V感谢并讨论合作', effects: [
         { type: 'resource', target: 'reputation', value: 15, operation: 'add' }, { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '大V说"你的内容确实好，以后可以多互动"。意外的贵人。' },
+      { id: 'c', text: '趁热度做一期直播跟新粉丝互动', effects: [
+        { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -10, operation: 'add' },
+      ], outcomeText: '你做了一次直播欢迎新粉丝。实时互动比文字回复亲切多了——很多路人转粉了。' },
     ], repeatable: false,
   },
   { id: 'cross_002', category: 'crisis', industries: ['coffee_shop', 'pet_care', 'food_delivery'], weight: 7,
@@ -1838,6 +2373,11 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '适当涨价，跟客户解释', effects: [
         { type: 'resource', target: 'reputation', value: 5, operation: 'add' }, { type: 'resource', target: 'money', value: 5, operation: 'add' },
       ], outcomeText: '你涨了一点并诚恳地解释了原因。大部分客户表示理解。' },
+      { id: 'c', text: '联合几个同行一起跟供应商谈价格', effects: [
+        { type: 'resource', target: 'money', value: 5, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -8, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
+      ], outcomeText: '你拉了几个同行一起跟供应商谈。批量拿货价格好谈多了——抱团取暖在什么时候都好使。' },
     ], repeatable: false,
   },
   { id: 'cross_003', category: 'narrative', industries: ['indie_dev', 'design_freelance', 'knowledge_pay'], weight: 7,
@@ -1849,6 +2389,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '自己认真做一次多语言版本', effects: [
         { type: 'resource', target: 'energy', value: -25, operation: 'add' }, { type: 'resource', target: 'reputation', value: 15, operation: 'add' },
       ], outcomeText: '你花了两个月做了完整的多语言版。海外用户说"终于等到官方版了"。' },
+      { id: 'c', text: '跟译者合作出一个官方双语版', effects: [
+        { type: 'resource', target: 'reputation', value: 18, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -12, operation: 'add' },
+      ], outcomeText: '你和译者合作优化了翻译。海外版比原版还要好——好的翻译是二次创作。' },
     ], repeatable: false,
   },
   { id: 'cross_004', category: 'crisis', industries: ['daigou', 'food_delivery', 'coffee_shop'], weight: 6,
@@ -1860,6 +2404,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '等限制自动解除', effects: [
         { type: 'resource', target: 'money', value: -10, operation: 'add' }, { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '限制终于解除了但损失了不少订单。你觉得"算了，不跟他们一般见识"。' },
+      { id: 'c', text: '请老客户帮你写几封推荐信', effects: [
+        { type: 'resource', target: 'reputation', value: 10, operation: 'add' },
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+      ], outcomeText: '老客户帮你写了几封真诚的推荐信。平台看到这么多好评——反而给你加了权重。' },
     ], repeatable: false,
   },
   // -- 10条随机日常（高权重，增加变化）--
@@ -1872,6 +2420,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '逼自己干一点，哪怕很慢', effects: [
         { type: 'resource', target: 'energy', value: -10, operation: 'add' }, { type: 'resource', target: 'health', value: -5, operation: 'add' },
       ], outcomeText: '你磨蹭了一天，效率极低。有时候允许自己休息反而是更高效率的方式。' },
+      { id: 'c', text: '做一件和工作完全无关的小事', effects: [
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: 5, operation: 'add' },
+      ], outcomeText: '你去阳台浇了浇花，整理了书架，做了一些随手就能完成的小事。做完之后心情莫名好了。' },
     ], repeatable: true,
   },
   { id: 'misc_002', category: 'opportunity', industries: 'all', weight: 7,
@@ -1883,6 +2435,9 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '收藏起来晚点学', effects: [
         { type: 'resource', target: 'energy', value: 5, operation: 'add' },
       ], outcomeText: '你点了收藏。然后和99%的收藏内容一样——再也没打开过。' },
+      { id: 'c', text: '先把教程保存下来纳入学习计划', effects: [
+        { type: 'resource', target: 'energy', value: 3, operation: 'add' },
+      ], outcomeText: '你把它加入了本周的学习清单。定个明确的时间学——不放在"以后再说"里烂掉。' },
     ], repeatable: true,
   },
   { id: 'misc_003', category: 'narrative', industries: 'all', weight: 7,
@@ -1894,6 +2449,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '记在手机备忘录里，明天处理', effects: [
         { type: 'resource', target: 'health', value: 10, operation: 'add' },
       ], outcomeText: '你在手机上草草记了几笔然后继续睡。第二天起来看——备忘录上写着"那个...就是那个..."你忘了要写什么了。' },
+      { id: 'c', text: '一大早先把灵感整理成完整方案', effects: [
+        { type: 'resource', target: 'energy', value: -5, operation: 'add' },
+        { type: 'resource', target: 'reputation', value: 12, operation: 'add' },
+      ], outcomeText: '你花了一个上午把半夜的灵感变成了可执行的方案。灵感不整理就只是灵感——整理完就是产品。' },
     ], repeatable: true,
   },
   { id: 'misc_004', category: 'neutral', industries: 'all', weight: 7,
@@ -1905,6 +2464,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '只把当前工作区域清一下', effects: [
         { type: 'resource', target: 'energy', value: -3, operation: 'add' },
       ], outcomeText: '你清出了一小块工作区域。虽然周围还是乱但至少能干活了。完美主义是奢侈的。' },
+      { id: 'c', text: '放点音乐边收拾边放松', effects: [
+        { type: 'resource', target: 'health', value: 8, operation: 'add' },
+        { type: 'resource', target: 'energy', value: 3, operation: 'add' },
+      ], outcomeText: '你放了喜欢的音乐一边收拾一边放松。打扫也可以是种享受——关键是心态。' },
     ], repeatable: true,
   },
   { id: 'misc_005', category: 'narrative', industries: 'all', weight: 8,
@@ -1916,6 +2479,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '再接再厉，开始下一项', effects: [
         { type: 'resource', target: 'energy', value: -5, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' },
       ], outcomeText: '你喝了一口咖啡开始了下一项工作。努力的人都知道——庆祝是给休息日留的。' },
+      { id: 'c', text: '在社交平台上分享一下这个好消息', effects: [
+        { type: 'resource', target: 'reputation', value: 8, operation: 'add' },
+        { type: 'resource', target: 'health', value: 3, operation: 'add' },
+      ], outcomeText: '你发了条动态分享完成任务的喜悦。好多人点赞——独乐乐不如众乐乐。' },
     ], repeatable: true,
   },
   { id: 'misc_006', category: 'crisis', industries: 'all', weight: 6,
@@ -1927,6 +2494,10 @@ export const EVENTS: GameEvent[] = [
       { id: 'b', text: '去交电费然后回家', effects: [
         { type: 'resource', target: 'money', value: -5, operation: 'add' }, { type: 'resource', target: 'health', value: 5, operation: 'add' },
       ], outcomeText: '你跑去营业厅交了电费。回来的路上顺便把水费、燃气费也交了——一劳永逸。' },
+      { id: 'c', text: '以后设置自动缴费提醒', effects: [
+        { type: 'resource', target: 'energy', value: -3, operation: 'add' },
+        { type: 'resource', target: 'health', value: 5, operation: 'add' },
+      ], outcomeText: '你在手机上设了所有账单的提醒。一次教训教会你的事——以后不会再忘了。' },
     ], repeatable: false,
   },
 ];
