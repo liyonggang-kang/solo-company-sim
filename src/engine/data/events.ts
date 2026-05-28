@@ -476,7 +476,7 @@ export const EVENTS: GameEvent[] = [
 
   // ======== 咖啡小店 (coffee_shop) ========
   {
-    id: 'cs_001', category: 'opportunity', industries: ['coffee_shop', 'pet_care'], weight: 7,
+    id: 'cs_001', category: 'opportunity', industries: ['coffee_shop'], weight: 7,
     title: '在小红书上火了',
     narrative: '一位美食博主来你店里拍照发到了小红书，配文"藏在巷子里的宝藏咖啡店"。周末突然排队了。',
     choices: [
@@ -496,7 +496,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'cs_002', category: 'crisis', industries: ['coffee_shop', 'pet_care'], weight: 6,
+    id: 'cs_002', category: 'crisis', industries: ['coffee_shop'], weight: 6,
     title: '房东要涨租',
     narrative: '年底了，房东说"这一带人气起来了，房租要涨30%"。你算了一笔账，利润基本被吃掉了。',
     choices: [
@@ -515,7 +515,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'cs_003', category: 'neutral', industries: ['coffee_shop', 'pet_care'], weight: 6,
+    id: 'cs_003', category: 'neutral', industries: ['coffee_shop'], weight: 6,
     title: '隔壁开了星巴克',
     narrative: '星巴克在你隔壁200米开了一家店。你的客流量立刻减少。熟客说"还是会来"，但确实少了。',
     choices: [
@@ -534,7 +534,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'cs_004', category: 'narrative', industries: ['coffee_shop', 'pet_care'], weight: 6,
+    id: 'cs_004', category: 'narrative', industries: ['coffee_shop'], weight: 6,
     title: '熟客的故事',
     narrative: '一位每天都来的熟客突然一周没出现。后来他朋友来说，他回老家了，临走前说"帮我跟老板说声谢谢"。',
     choices: [
@@ -553,7 +553,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'cs_005', category: 'crisis', industries: ['coffee_shop', 'pet_care'], weight: 5,
+    id: 'cs_005', category: 'crisis', industries: ['coffee_shop'], weight: 5,
     title: '咖啡豆涨价',
     narrative: '国际贸易摩擦导致咖啡豆进口价暴涨了40%。你的原料成本直接翻倍。',
     choices: [
@@ -572,7 +572,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'cs_006', category: 'opportunity', industries: ['coffee_shop', 'pet_care'], weight: 6,
+    id: 'cs_006', category: 'opportunity', industries: ['coffee_shop'], weight: 6,
     title: '办个咖啡课程',
     narrative: '有顾客问你能不能教他们手冲。你突然想到：为什么不办个咖啡体验课？',
     choices: [
@@ -1063,7 +1063,7 @@ export const EVENTS: GameEvent[] = [
 
   // ======== 宠物寄养 (pet_care) ========
   {
-    id: 'pc_001', category: 'narrative', industries: ['pet_care', 'coffee_shop'], weight: 7,
+    id: 'pc_001', category: 'narrative', industries: ['pet_care'], weight: 7,
     title: '最难搞的猫',
     narrative: '一只客人的布偶猫完全不亲人，躲在沙发底下两天没出来。主人说"它就是这样"。你得想办法。',
     choices: [
@@ -1081,7 +1081,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'pc_002', category: 'crisis', industries: ['pet_care', 'coffee_shop'], weight: 6,
+    id: 'pc_002', category: 'crisis', industries: ['pet_care'], weight: 6,
     title: '狗狗生病了',
     narrative: '寄养的一只金毛突然呕吐不止，看起来很难受。当时是凌晨一点，最近的宠物医院要40分钟车程。',
     choices: [
@@ -1101,7 +1101,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'pc_003', category: 'opportunity', industries: ['pet_care', 'coffee_shop'], weight: 6,
+    id: 'pc_003', category: 'opportunity', industries: ['pet_care'], weight: 6,
     title: '宠物博主合作',
     narrative: '一个宠物博主想让你长期负责她家三只猫的寄养，她经常出差。费用不错而且能帮你宣传。',
     choices: [
@@ -1119,7 +1119,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'pc_004', category: 'neutral', industries: ['pet_care', 'coffee_shop'], weight: 6,
+    id: 'pc_004', category: 'neutral', industries: ['pet_care'], weight: 6,
     title: '场地扩展',
     narrative: '你的寄养预约越来越多，家里快放不下了。有朋友建议你租个更大的地方，但租金是一笔不小的开支。',
     choices: [
@@ -1137,7 +1137,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'pc_005', category: 'crisis', industries: ['pet_care', 'coffee_shop'], weight: 5,
+    id: 'pc_005', category: 'crisis', industries: ['pet_care'], weight: 5,
     title: '邻居投诉',
     narrative: '你住的是居民楼，宠物叫声引来了邻居投诉。物业说再不处理就要罚款了。',
     choices: [
@@ -1156,7 +1156,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   {
-    id: 'pc_006', category: 'narrative', industries: ['pet_care', 'coffee_shop'], weight: 6,
+    id: 'pc_006', category: 'narrative', industries: ['pet_care'], weight: 6,
     title: '客人不愿来接',
     narrative: '一只狗的主人说"能不能再寄养一个月？"这已经是第三次延期了。你怀疑她可能不想养了。',
     choices: [
@@ -1580,7 +1580,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   // -- 咖啡小店额外事件 --
-  { id: 'cs_007', category: 'crisis', industries: ['coffee_shop', 'pet_care'], weight: 6,
+  { id: 'cs_007', category: 'crisis', industries: ['coffee_shop'], weight: 6,
     title: '台风天停电', narrative: '台风导致停电两天，你冰箱里的牛奶、蛋糕全部报废了。刚进的咖啡豆也因为潮湿受了影响。',
     choices: [
       { id: 'a', text: '全部扔掉，重新采购', effects: [
@@ -1595,7 +1595,7 @@ export const EVENTS: GameEvent[] = [
       ], outcomeText: '你发现店铺保险里包含自然灾害条款，拿到了部分理赔。保险不能白买。' },
     ], repeatable: false,
   },
-  { id: 'cs_008', category: 'opportunity', industries: ['coffee_shop', 'pet_care'], weight: 6,
+  { id: 'cs_008', category: 'opportunity', industries: ['coffee_shop'], weight: 6,
     title: '咖啡拉花比赛', narrative: '市里举办咖啡拉花比赛，冠军可以获得媒体曝光和一笔奖金。你对自己的拉花技术很有自信。',
     choices: [
       { id: 'a', text: '参加比赛，全力备赛', effects: [
@@ -1610,7 +1610,7 @@ export const EVENTS: GameEvent[] = [
       ], outcomeText: '熟客们在社交平台上疯狂帮你拉票。你发现他们比你自己还上心。' },
     ], repeatable: false,
   },
-  { id: 'cs_009', category: 'narrative', industries: ['coffee_shop', 'pet_care'], weight: 7,
+  { id: 'cs_009', category: 'narrative', industries: ['coffee_shop'], weight: 7,
     title: '求婚计划', narrative: '一个客人找到你，想在店里向女朋友求婚，希望能配合制造惊喜——把戒指藏在咖啡杯底。第一次约会就在这里。',
     choices: [
       { id: 'a', text: '全力配合，做成一场浪漫活动', effects: [
@@ -1625,7 +1625,7 @@ export const EVENTS: GameEvent[] = [
       ], outcomeText: '你把求婚故事和照片裱起来挂在墙上。新客人进来都会驻足看看——这是这家店独一无二的温度。' },
     ], repeatable: false,
   },
-  { id: 'cs_010', category: 'neutral', industries: ['coffee_shop', 'pet_care'], weight: 5,
+  { id: 'cs_010', category: 'neutral', industries: ['coffee_shop'], weight: 5,
     title: '要不要开第二家店', narrative: '生意越来越稳定，你开始考虑要不要开第二家店。朋友说"趁热打铁"，另一个朋友说"小而美最好"。',
     choices: [
       { id: 'a', text: '开分店，扩展规模', effects: [
@@ -1887,7 +1887,7 @@ export const EVENTS: GameEvent[] = [
     ], repeatable: false,
   },
   // -- 宠物寄养额外事件 --
-  { id: 'pc_007', category: 'crisis', industries: ['pet_care', 'coffee_shop'], weight: 6,
+  { id: 'pc_007', category: 'crisis', industries: ['pet_care'], weight: 6,
     title: '两只狗打架了', narrative: '两只寄养的狗突然打了起来，家里一片狼藉。一只狗的耳朵被咬出了血，你得立刻处理。',
     choices: [
       { id: 'a', text: '立刻送医，承担医药费', effects: [
@@ -1902,7 +1902,7 @@ export const EVENTS: GameEvent[] = [
       ], outcomeText: '你建了一套宠物性格评估表。以后来的宠物先测试再分组——从源头避免冲突。' },
     ], repeatable: false,
   },
-  { id: 'pc_008', category: 'opportunity', industries: ['pet_care', 'coffee_shop'], weight: 6,
+  { id: 'pc_008', category: 'opportunity', industries: ['pet_care'], weight: 6,
     title: '宠物烘焙合作', narrative: '一个做宠物烘焙的朋友提议合作：你在寄养服务里附加她的宠物蛋糕/零食，利润分成。客单价可以提高30%。',
     choices: [
       { id: 'a', text: '合作，丰富服务项目', effects: [
@@ -1917,7 +1917,7 @@ export const EVENTS: GameEvent[] = [
       ], outcomeText: '你给几个老客户的狗狗免费尝了宠物蛋糕。反馈很好——正式上线就有订单了。' },
     ], repeatable: false,
   },
-  { id: 'pc_009', category: 'narrative', industries: ['pet_care', 'coffee_shop'], weight: 7,
+  { id: 'pc_009', category: 'narrative', industries: ['pet_care'], weight: 7,
     title: '救助流浪动物', narrative: '一个朋友在路边发现了一窝被遗弃的小猫，问你能不能暂时接收。你家已经有寄养的宠物了。',
     choices: [
       { id: 'a', text: '接收，帮它们找领养', effects: [
@@ -1932,7 +1932,7 @@ export const EVENTS: GameEvent[] = [
       ], outcomeText: '你给小猫们拍了专业的领养照。好看的照片让两只猫当天就被认领了。' },
     ], repeatable: false,
   },
-  { id: 'pc_010', category: 'neutral', industries: ['pet_care', 'coffee_shop'], weight: 5,
+  { id: 'pc_010', category: 'neutral', industries: ['pet_care'], weight: 5,
     title: '要不要考宠物护理证书', narrative: '市面上有一个宠物护理的职业证书，考了会更专业——但要花一笔钱和大量时间学习。',
     choices: [
       { id: 'a', text: '考证，提升专业度', effects: [
@@ -2706,6 +2706,48 @@ export const EVENTS: GameEvent[] = [
       { id: 'a', text: '从用户的角度重新设计产品', effects: [{ type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'reputation', value: 15, operation: 'add' }], outcomeText: '你以让人开心为标准重新审视了一遍。发现有些地方确实可以做得更好——改了之后反馈好了很多。' },
       { id: 'b', text: '把这段对话发成一条动态', effects: [{ type: 'resource', target: 'reputation', value: 8, operation: 'add' }, { type: 'resource', target: 'health', value: 5, operation: 'add' }], outcomeText: '你发了朋友圈。好多人评论小朋友说出了问题的本质。' },
       { id: 'c', text: '以后定期问自己用户会开心吗', effects: [{ type: 'resource', target: 'health', value: 8, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' }], outcomeText: '你把这句话当成了做决定的标尺。简单的问题有时候比复杂的分析更好用。' },
+    ], repeatable: false,
+  },
+
+  // ======== 宠物寄养补充事件 ========
+  { id: 'pc_011', category: 'opportunity', industries: ['pet_care'], weight: 7,
+    title: '一个客户想长期包月寄养', narrative: '一个经常出差的白领想跟你签长期寄养合同——每月固定费用她出差时就把狗放你这。稳定的收入但需要你随时有空。',
+    choices: [
+      { id: 'a', text: '签包月合同稳定现金流', effects: [{ type: 'resource', target: 'money', value: 15, operation: 'add' }, { type: 'resource', target: 'energy', value: -10, operation: 'add' }], outcomeText: '包月合同签了。每月固定收入进账——虽然要随叫随到但财务上安心了不少。' },
+      { id: 'b', text: '按次收费保持灵活性', effects: [{ type: 'resource', target: 'energy', value: 5, operation: 'add' }, { type: 'resource', target: 'health', value: 5, operation: 'add' }], outcomeText: '你选择按次收费。虽然收入不那么稳定但保留了自由——你随时可以拒绝。' },
+      { id: 'c', text: '先试一个月看看合不合适', effects: [{ type: 'resource', target: 'money', value: 8, operation: 'add' }, { type: 'resource', target: 'energy', value: -5, operation: 'add' }, { type: 'resource', target: 'health', value: 3, operation: 'add' }], outcomeText: '先试了一个月。狗狗适应得不错——三个月后再谈长期的事。' },
+    ], repeatable: false,
+  },
+  { id: 'pc_012', category: 'crisis', industries: ['pet_care'], weight: 6,
+    title: '狗狗拆家了', narrative: '一只精力旺盛的哈士奇趁你出门买菜把客厅拆了——沙发咬破了拖鞋全军覆没。你推开门的那一瞬间差点哭出来。',
+    choices: [
+      { id: 'a', text: '自认倒霉自己收拾', effects: [{ type: 'resource', target: 'energy', value: -18, operation: 'add' }, { type: 'resource', target: 'money', value: -8, operation: 'add' }], outcomeText: '你花了一下午收拾残局。以后出门前一定要多遛两圈——能量没释放完的哈士奇就是移动拆家机器。' },
+      { id: 'b', text: '跟主人沟通看能不能分担损失', effects: [{ type: 'resource', target: 'reputation', value: 5, operation: 'add' }, { type: 'resource', target: 'energy', value: -8, operation: 'add' }], outcomeText: '你跟主人说明了情况。主人说它在家就这样——主动提出多付一些寄养费补偿。' },
+      { id: 'c', text: '以后只接小型犬减少风险', effects: [{ type: 'resource', target: 'health', value: 8, operation: 'add' }, { type: 'resource', target: 'reputation', value: 3, operation: 'add' }], outcomeText: '你调整了接单策略——以后只接小型犬和猫咪。虽然收入少了但心不累了。' },
+    ], repeatable: false,
+  },
+  { id: 'pc_013', category: 'narrative', industries: ['pet_care'], weight: 8,
+    title: '一只老狗的最后几天', narrative: '一个客户送来了一只14岁的老金毛，主人要去外地处理急事要寄养一周。但你看得出来——这只老狗的时日可能不多了。',
+    choices: [
+      { id: 'a', text: '格外用心照顾给它最好的最后时光', effects: [{ type: 'resource', target: 'health', value: 12, operation: 'add' }, { type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'reputation', value: 18, operation: 'add' }], outcomeText: '你每天给它按摩说好话拍很多照片发给主人。主人说这些照片是她这辈子最珍贵的礼物。' },
+      { id: 'b', text: '按正常标准照顾不给特殊待遇', effects: [{ type: 'resource', target: 'energy', value: -5, operation: 'add' }], outcomeText: '你按正常标准照顾了它一周。它安全回到了主人身边——但你也觉得这只老狗眼里有故事。' },
+      { id: 'c', text: '建议主人找个有医疗条件的寄养', effects: [{ type: 'resource', target: 'reputation', value: 12, operation: 'add' }, { type: 'resource', target: 'energy', value: -5, operation: 'add' }], outcomeText: '你坦诚说自己这里没有医疗条件帮他联系了一家有兽医坐镇的寄养。你的真诚让他很感动。' },
+    ], repeatable: false,
+  },
+  { id: 'pc_014', category: 'opportunity', industries: ['pet_care'], weight: 6,
+    title: '有人想合伙开一家宠物店', narrative: '一个常客看到了你寄养服务的口碑，问你有没有兴趣一起开一家正规的宠物寄养店——她出资金你出技术和服务。',
+    choices: [
+      { id: 'a', text: '接受合伙做大做强', effects: [{ type: 'resource', target: 'money', value: 25, operation: 'add' }, { type: 'resource', target: 'reputation', value: 15, operation: 'add' }, { type: 'resource', target: 'energy', value: -20, operation: 'add' }], outcomeText: '你们签了合伙协议找了店面开始装修。从家庭寄养升级到正规店铺——压力和机遇一样大。' },
+      { id: 'b', text: '只接受投资但不合伙经营', effects: [{ type: 'resource', target: 'money', value: 15, operation: 'add' }, { type: 'resource', target: 'health', value: 5, operation: 'add' }], outcomeText: '你接受了她的投资但保持独立经营。她只分红不管事——这是你最理想的合作方式。' },
+      { id: 'c', text: '婉拒但感谢她的信任', effects: [{ type: 'resource', target: 'health', value: 10, operation: 'add' }, { type: 'resource', target: 'reputation', value: 5, operation: 'add' }], outcomeText: '你说目前还是想保持小规模。她表示理解——等你想做大了一定找我。' },
+    ], repeatable: false,
+  },
+  { id: 'pc_015', category: 'crisis', industries: ['pet_care'], weight: 5,
+    title: '主人寄养完不来接', narrative: '约定好的接狗日期到了——主人没出现。电话打不通微信不回。又等了两天还是没消息——狗开始焦虑了你也着急。',
+    choices: [
+      { id: 'a', text: '继续照顾同时多方联系主人', effects: [{ type: 'resource', target: 'energy', value: -15, operation: 'add' }, { type: 'resource', target: 'reputation', value: 10, operation: 'add' }], outcomeText: '你通过紧急联系人终于找到主人——她出了车祸在医院手机也坏了。她哭着感谢你的坚持。' },
+      { id: 'b', text: '报警备案然后寻找领养', effects: [{ type: 'resource', target: 'energy', value: -12, operation: 'add' }, { type: 'resource', target: 'health', value: -5, operation: 'add' }], outcomeText: '你在警局备了案。两周后还是没消息——你帮狗狗找到了新的领养家庭。虽然这是最坏的结局但至少狗过得不错。' },
+      { id: 'c', text: '在朋友圈发动大家一起找人', effects: [{ type: 'resource', target: 'reputation', value: 10, operation: 'add' }, { type: 'resource', target: 'energy', value: -8, operation: 'add' }], outcomeText: '你在宠友圈发了寻人启事。三天后主人主动联系了——她只是手机丢了换新号忘了保存你的联系方式。一场虚惊。' },
     ], repeatable: false,
   },
 ];
